@@ -1,538 +1,538 @@
 import { TechItem, ProjectCaseStudy, FreelanceService } from '../types';
 
 export const PROFILE = {
-  name: "Deepak Kumar",
-  role: "IT Professional & Systems Freelancer",
-  location: "Bangalore · Open to remote",
-  status: "Available for freelance & engineering roles",
-  version: "v2.4",
-  systemStatus: "System online — portfolio v2.4",
-  headline: "I build technology that solves real problems.",
-  secondaryText: "IT professional and freelancer focused on software, AI, networking, automation, and practical digital solutions. I like understanding how things work, finding the weak point, and building a better way to solve it.",
-  email: "hello@deepak.dev",
+  name: "Deepak Kumar N",
+  role: "Software Engineer | Full Stack & AI Systems",
+  location: "Coimbatore, Tamil Nadu, India · Open to Remote",
+  status: "Available for Full-Time Roles & Systems Engineering",
+  version: "v2.5",
+  systemStatus: "System online — B.Tech IT '26 · Verified",
+  headline: "Engineering Full-Stack Web & Agentic AI Systems.",
+  secondaryText: "Final-year B.Tech Information Technology student (CGPA: 7.50 / 10.0) at Sri Krishna College of Engineering and Technology. Experienced in Java, Spring Boot, React.js, and RESTful APIs, with hands-on development in LLM-powered agentic applications, AWS cloud architectures, and decentralized solar microgrids.",
+  email: "deepak.nithyananthan@gmail.com",
+  phone: "+91 9360675434",
   github: "https://github.com/Deepakdudez",
   linkedin: "https://www.linkedin.com/in/deep4kkumar/",
+  education: [
+    {
+      degree: "Bachelor of Technology, Information Technology",
+      institution: "Sri Krishna College of Engineering and Technology, Coimbatore, Tamil Nadu",
+      duration: "2022 – 2026",
+      score: "CGPA: 7.50 / 10.0",
+      details: "Specialization in Full Stack Development, Cloud Architecture, AI Systems, Distributed Computing, and Database Systems."
+    },
+    {
+      degree: "Intermediate College (Higher Secondary)",
+      institution: "Kids Club Matriculation Higher Secondary School, Tiruppur, Tamil Nadu",
+      duration: "2021 – 2022",
+      score: "Percentage: 76%",
+      details: "Higher secondary education with core focus in Mathematics, Physics, Chemistry, and Computer Science."
+    }
+  ],
+  certifications: [
+    { name: "AWS Academy Cloud Foundations", issuer: "AWS Academy", status: "Graduate" },
+    { name: "Generative AI Mastermind", issuer: "Outskill", status: "Certified" },
+    { name: "Java Training", issuer: "IIT Bombay (Spoken Tutorial)", status: "Completed" },
+    { name: "Java for Beginners", issuer: "Infosys", status: "Certified" },
+    { name: "SQL Standard", issuer: "Skill Rack", status: "Certified" },
+    { name: "CCNA (Training)", issuer: "Cisco", status: "Completed" }
+  ],
   metrics: [
-    { label: "systems shipped", value: "12+" },
-    { label: "domains covered", value: "6" },
-    { label: "verified evidence", value: "100%" }
+    { label: "Academic CGPA", value: "7.50" },
+    { label: "Graduation Year", value: "2026" },
+    { label: "Certifications", value: "6" }
   ],
   trustBadges: [
-    "IT Background",
-    "Full-Stack Dev",
-    "AI / Automation",
-    "Networking",
-    "Cloud",
-    "Systems Thinking"
+    "B.Tech IT (2022–2026)",
+    "SKCET Coimbatore",
+    "Altitudes Intern '25",
+    "AWS Academy Certified",
+    "IIT Bombay Java",
+    "Agentic AI & LLMs"
   ],
   currentlyExploring: {
     title: "Currently exploring",
-    description: "AI agents, RAG architectures, cloud systems and scalable app design.",
+    description: "Agentic AI workflows, AWS cloud infrastructure orchestration, ICP blockchain smart contracts, and microservices architecture.",
     items: [
-      { name: "AI Agents", status: "Learning" },
-      { name: "RAG", status: "Building" },
-      { name: "Docker", status: "Working" },
-      { name: "AWS", status: "Exploring" },
-      { name: "System Design", status: "Learning" }
+      { name: "Agentic AI", status: "Active Building" },
+      { name: "AWS (EC2/S3/Lambda)", status: "Certified / Hands-on" },
+      { name: "Spring Boot Microservices", status: "Core Stack" },
+      { name: "ICP Blockchain", status: "Shipped Live" },
+      { name: "Power BI & SQL Analytics", status: "Production Ready" }
     ]
   },
   beliefs: [
     {
-      title: "I learn fastest when I build.",
-      desc: "Theory provides the map, but running code, debugging network packet drops, and seeing latency metrics reveals the actual terrain."
+      title: "I learn fastest when I build real systems.",
+      desc: "Theory provides the map, but writing code, deploying cloud architectures, connecting REST APIs, and observing real performance reveals the actual terrain."
     },
     {
       title: "Technology makes more sense when you understand the problem first.",
-      desc: "Never pick a tool or database just because it is trending. Start with constraints, throughput requirements, and the human user."
+      desc: "Never pick a framework or tool just because it is trending. Start with constraints, throughput requirements, and the real end-user workflow."
     },
     {
       title: "A good interface makes complicated systems feel simple.",
-      desc: "Underneath might be distributed vector indices and packet analyzers, but the surface should be clear, deliberate, and calm."
+      desc: "Underneath might be multi-step LLM agent pipelines, distributed blockchain nodes, and Spring Boot REST services, but the surface should be clear, deliberate, and calm."
     },
     {
       title: "I prefer practical engineering over unnecessary complexity.",
-      desc: "A reliable monolithic architecture with automated backups beats a fragile microservice web every single time for early stage systems."
+      desc: "A clean, modular architecture with structured REST APIs and automated deployment beats brittle, over-engineered complexity every time."
     }
   ],
-  story: "I started with software development, then became increasingly interested in what happens underneath the application — networks, systems, infrastructure, and now AI. Rather than staying in a single isolated layer, I prefer connecting the dots: designing the UI, writing the API, architecting the database, securing the network boundary, and integrating AI models that actually stay grounded in verified data."
+  story: "I am a final-year B.Tech Information Technology student at Sri Krishna College of Engineering and Technology (CGPA: 7.50 / 10.0). I combine strong backend foundations in Java, Spring Boot, and RESTful APIs with modern frontend craft in React.js and cutting-edge work in Agentic AI and Cloud infrastructure. During my internship at Altitudes (Jun 2025 – Jul 2025), I engineered a system that translates natural language prompts into complete AWS cloud architecture diagrams. I have also designed and shipped a decentralized solar microgrid on the ICP blockchain and enterprise sales business intelligence dashboards using advanced SQL and Power BI."
 };
 
 export const WHAT_I_BUILD_CATEGORIES = [
   {
     num: "01",
-    title: "Web Applications",
-    desc: "Responsive products with clean architecture and real auth, data, and deployment.",
-    stack: "React · Next.js · Node · TypeScript",
-    icon: "layout-dashboard"
-  },
-  {
-    num: "02",
-    title: "AI Systems",
-    desc: "Assistants, RAG pipelines and agents grounded in your own verified data with strict guardrails.",
-    stack: "RAG · Agents · Embeddings · pgvector",
+    title: "Agentic AI Systems",
+    desc: "Multi-agent pipelines, prompt engineering, and LLMs that automate cloud architecture design and complex workflows.",
+    stack: "React.js · Spring Boot · LLMs · AWS",
     icon: "bot"
   },
   {
+    num: "02",
+    title: "Full-Stack Web Apps",
+    desc: "Robust applications with React frontends, Spring Boot backend microservices, and clean RESTful API contracts.",
+    stack: "React.js · Java · Spring Boot · REST APIs",
+    icon: "layout-dashboard"
+  },
+  {
     num: "03",
-    title: "Automation",
-    desc: "Kill repetitive work with scripts, cron jobs, webhook handlers, and smart workflows.",
-    stack: "Python · n8n · APIs · Bash",
-    icon: "zap"
-  },
-  {
-    num: "04",
-    title: "Networking / Infra",
-    desc: "Subnets, DNS, VPNs and troubleshooting that actually holds up under real load.",
-    stack: "TCP/IP · Linux · Wireshark · Caddy",
-    icon: "network"
-  },
-  {
-    num: "05",
-    title: "Cloud / DevOps",
-    desc: "Dockerized builds shipped with repeatable CI/CD pipelines and observability.",
-    stack: "Docker · CI/CD · AWS · Prometheus",
+    title: "Cloud & Distributed Systems",
+    desc: "Scalable cloud services on AWS (EC2, S3, Lambda) and decentralized solar microgrids deployed on the ICP blockchain.",
+    stack: "AWS · EC2 · S3 · Lambda · ICP Blockchain",
     icon: "cloud"
   },
   {
-    num: "06",
-    title: "Data / Analytics",
-    desc: "Dashboards and metric collectors that explain what is happening and why.",
-    stack: "Postgres · Grafana · Analytics",
+    num: "04",
+    title: "Data & BI Analytics",
+    desc: "Large-scale transactional data pipelines with advanced SQL (joins, window functions) and executive Power BI dashboards.",
+    stack: "SQL · Power BI · ETL · MySQL · PostgreSQL",
     icon: "bar-chart-3"
+  },
+  {
+    num: "05",
+    title: "Networking & Troubleshooting",
+    desc: "Diagnosing network protocols (TCP/IP, DNS, DHCP, OSI model) and simulating enterprise IT system support environments.",
+    stack: "TCP/IP · DNS · DHCP · VMware · Windows Server",
+    icon: "network"
+  },
+  {
+    num: "06",
+    title: "Automation & CI/CD",
+    desc: "Automated builds, GitHub Actions workflows, Postman API testing, and AI-augmented coding with Copilot & Cursor.",
+    stack: "GitHub Actions · Postman · Copilot · Cursor",
+    icon: "zap"
   }
 ];
 
 export const PROJECTS: ProjectCaseStudy[] = [
   {
-    id: "gridops",
-    title: "GridOps — Support Intelligence",
-    tagline: "Unified dashboard + AI triage grounded in live internal documentation",
-    badge: "Solo build — design to deploy",
+    id: "agentic-ai-cloud",
+    title: "Agentic AI for Cloud Architecture Generation",
+    tagline: "Translates natural language requirements into verified AWS cloud diagrams and service topologies using multi-agent orchestration",
+    badge: "Flagship AI Project — Prompt & Agent Engineering",
     category: "AI",
-    stack: ["Next.js", "RAG", "pgvector", "Docker", "TypeScript", "FastAPI"],
-    summaryProblem: "Support teams drown in tickets with zero context. Repetitive questions take up 65% of Tier-1 engineer time.",
-    summarySolution: "Unified dashboard + AI triage grounded in docs with vector search and citations.",
-    metrics: ["-42% initial triage time", "94% citation accuracy", "<220ms retrieval"],
-    imageQuery: "dark tech support dashboard interface, black background, lime green charts and tickets, cinematic premium",
-    problem: "Technical support teams at growing software products suffer from ticket fatigue. An internal audit revealed over 60% of submitted inquiries were already answered in internal knowledge bases, but engineers spent minutes searching through disparate Notion, GitHub Wiki, and Confluence docs for each incident.",
-    context: "I built GridOps as an end-to-end support accelerator. It had to run in a private VPC so sensitive customer logs never left the infrastructure, while providing instant semantic answers to incoming queries with verifiable citations.",
-    myRole: "Sole Architect & Developer. Designed the dark UI dashboard in Next.js, built the document ingestion pipeline in Python FastAPI, configured PostgreSQL with pgvector, and packaged everything into Docker Compose for single-command deployment.",
+    stack: ["React.js", "Spring Boot", "LLMs (OpenAI/Llama)", "AWS (EC2, S3, Lambda)", "REST APIs", "Prompt Engineering"],
+    summaryProblem: "Translating complex business requirements into AWS cloud architecture diagrams requires tedious manual configuration and deep knowledge of hundreds of cloud services.",
+    summarySolution: "Multi-agent AI system that decomposes user requirements into verifiable sub-goals, selects optimal AWS services, and renders real-time interactive architecture diagrams.",
+    metrics: ["-60% architecture drafting time", "Multi-step agent decomposition", "Real-time AWS visualization"],
+    imageQuery: "futuristic cloud architecture generation interface, glowing AWS service nodes, dark tech aesthetic",
+    problem: "Solutions architects and developers spend hours manually drafting cloud topology diagrams, choosing compute/storage tiers, and connecting security groups. Junior teams often miss optimal service selections (e.g. EC2 vs Lambda, S3 storage tiers) and secure network boundary best practices.",
+    context: "Developed as a flagship project advancing my work from Altitudes internship. The goal was to build a production-grade multi-agent pipeline that accepts plain-English infrastructure prompts and produces verified, interactive AWS cloud architecture diagrams with Spring Boot API orchestration.",
+    myRole: "Lead Architect & Full-Stack Developer. Designed the multi-agent prompt chaining logic, developed the Spring Boot REST API layer to mediate between the React UI and LLM endpoints, deployed backend services on AWS EC2 with S3 asset storage and Lambda for event-driven inference.",
     architecture: {
-      title: "RAG Triage Pipeline",
-      description: "How user queries flow from the web UI to grounded verified responses",
+      title: "Agentic AI Cloud Architecture Pipeline",
+      description: "How plain language prompts transform into verified, interactive AWS cloud diagrams",
       nodes: [
-        { id: "1", name: "User / Agent", type: "client", description: "Support engineer views incoming ticket queue", tech: "Next.js UI", rationale: "Keyboard-driven fast triage interface" },
-        { id: "2", name: "API Gateway", type: "service", description: "Authenticates requests and applies token bucket rate limits", tech: "FastAPI / Node", rationale: "Prevents LLM quota flooding" },
-        { id: "3", name: "Input Guardrail", type: "ai", description: "Checks for prompt injection and internal secret exfiltration attempts", tech: "Regex + Guardrail classifier", rationale: "Mandatory security boundary" },
-        { id: "4", name: "RAG Retriever", type: "ai", description: "Hybrid search: BM25 keywords + cosine vector similarity", tech: "pgvector & pg_trgm", rationale: "Pure vectors miss exact error codes like ERR_CONN_REFUSED" },
-        { id: "5", name: "Vector DB", type: "database", description: "Embedded documentation chunks with metadata tags", tech: "PostgreSQL 16 + pgvector", rationale: "Keeps data self-hosted without external SaaS lock-in" },
-        { id: "6", name: "LLM Synthesizer", type: "ai", description: "Builds answer restricted solely to retrieved context with citations", tech: "Self-hosted / OpenAI compatible API", rationale: "Zero hallucination guarantee" },
-        { id: "7", name: "Output Guardrail", type: "service", description: "Verifies every statement links to an ingested source ID", tech: "JSON Schema Validator", rationale: "Ensures evidence-backed responses" }
+        { id: "1", name: "User Prompt Interface", type: "client", description: "Engineer specifies infrastructure requirements in natural language", tech: "React.js + Tailwind", rationale: "Provides interactive canvas and real-time prompt feedback" },
+        { id: "2", name: "Spring Boot API Gateway", type: "service", description: "Authenticates requests, validates schema, and manages agent task sessions", tech: "Spring Boot / REST APIs", rationale: "Ensures type-safe communication and session isolation" },
+        { id: "3", name: "Requirement Decomposition Agent", type: "ai", description: "Breaks user prompt into functional cloud components: Compute, Storage, Database, Networking", tech: "LLM (OpenAI / Llama)", rationale: "Decomposes complex goals into verifiable sub-goals" },
+        { id: "4", name: "AWS Service Recommender Agent", type: "ai", description: "Evaluates trade-offs (e.g. Lambda vs EC2, S3 tiering) against cost and latency constraints", tech: "Prompt Engineering Chaining", rationale: "Selects best-fit services aligned with AWS Well-Architected Framework" },
+        { id: "5", name: "Topology Generator & Validator", type: "service", description: "Constructs node connection graph and validates network security boundaries (VPC, Security Groups)", tech: "Java Spring Service", rationale: "Guarantees valid AWS topological flow without orphaned resources" },
+        { id: "6", name: "Interactive Visualizer Canvas", type: "client", description: "Renders real-time exportable diagram with interactive node inspection", tech: "React SVG Canvas", rationale: "Enables instant visual verification and architecture export" }
       ]
     },
     technologies: [
-      { name: "Next.js 14", role: "Frontend UI", why: "Server components reduce bundle size; provides clean API routes for proxying." },
-      { name: "PostgreSQL + pgvector", role: "Vector & Relational Storage", why: "No need for a separate vector DB service like Pinecone when Postgres handles both ACID relations and high-speed vector indexes." },
-      { name: "FastAPI (Python)", role: "Ingestion Worker", why: "Async support, native integration with chunking libraries and embedding models." },
-      { name: "Docker", role: "Deployment Containerization", why: "Ensures reproducible environments between local dev and customer servers." }
+      { name: "React.js", role: "Frontend Visualization", why: "Component-based architecture allows modular node rendering, zoom/pan canvas, and dynamic property sidebars." },
+      { name: "Spring Boot", role: "Backend REST API", why: "Enterprise-grade reliability, dependency injection, and high-throughput mediation between frontend and LLM agents." },
+      { name: "LLMs & Prompt Engineering", role: "Multi-Agent Backbone", why: "Decomposes unstructured English into structured JSON topology schemas with verifiable sub-goals." },
+      { name: "AWS (EC2, S3, Lambda)", role: "Deployment & Inference", why: "Practical cloud operations: backend on EC2, diagram assets on S3, and serverless inference tasks on Lambda." }
     ],
     challenges: [
       {
-        problem: "Context Chunk Boundary Loss: Code snippets and configuration blocks were getting chopped across chunk boundaries, making answers wrong.",
-        resolution: "Implemented recursive markdown-aware chunking with 15% sliding window overlap and custom syntax preservation for code blocks."
+        problem: "Hallucinated Connections: Early LLM iterations occasionally created impossible network links (e.g. connecting an S3 bucket directly to a private VPC subnet without VPC endpoints).",
+        resolution: "Introduced a deterministic Java graph-validation layer in Spring Boot that validates every generated edge against AWS networking rules before sending to the client."
       },
       {
-        problem: "Acronym Blindness: When users searched for exact error strings like 'SSL_ST_INIT', dense semantic vectors ranked general SSL guides above the exact fix.",
-        resolution: "Introduced Reciprocal Rank Fusion (RRF) combining dense cosine similarity with sparse BM25 keyword matching."
+        problem: "Latency during Multi-step Chaining: Running serial LLM calls for requirement parsing, service selection, and schema generation resulted in 8-12 second response delays.",
+        resolution: "Parallelized independent agent tasks (e.g. compute recommendation and database selection run concurrently) cutting roundtrip latency by 55%."
       }
     ],
     decisions: [
       {
-        decision: "Self-hosted pgvector instead of Pinecone SaaS",
-        alternativeRejected: "Pinecone / Weaviate Cloud",
-        rationale: "Enterprise clients required on-premises data isolation where documentation never crosses third-party boundaries."
+        decision: "Spring Boot REST backend over simple serverless Python scripts",
+        alternativeRejected: "Standalone Python scripts",
+        rationale: "Spring Boot provided structured API versioning, clean microservices separation, and enterprise Java ecosystem reliability."
       },
       {
-        decision: "Strict source citation requirement in LLM system prompt",
-        alternativeRejected: "Freeform open synthesis",
-        rationale: "Support agents need to click directly into the doc source before forwarding answers to paying customers."
+        decision: "Multi-step Agentic Decomposition over single massive prompt",
+        alternativeRejected: "Single prompt generation",
+        rationale: "Single prompts frequently omitted required network resources (VPCs, NAT gateways). Chaining dedicated sub-agents dramatically improved output accuracy."
       }
     ],
     lessons: [
-      "Vector search is only 40% of a good RAG system; the other 60% is clean document preprocessing, metadata filtering, and output guardrails.",
-      "Support teams value speed over verbosity — short, bulleted solutions with direct doc links are 10x more helpful than paragraph essays."
+      "Agentic AI reliability comes from combining probabilistic LLMs with deterministic validation rules.",
+      "Visual real-time feedback keeps users engaged even when deep reasoning chains take a few seconds."
     ],
     futureImprovements: [
-      "Add automated Slack bot webhook listener to suggest fixes directly within customer-facing incident channels.",
-      "Implement automated feedback collection (thumbs up/down) that fine-tunes chunk reranking weights."
+      "Add direct Terraform / AWS CloudFormation template export for 1-click infrastructure deployment.",
+      "Integrate AWS Cost Calculator API to estimate monthly running costs directly on the diagram."
     ]
   },
   {
-    id: "netmap",
-    title: "NetMap — Home Lab Monitor",
-    tagline: "Live topology mapping, sub-second latency alerts, and DNS insights for edge labs",
-    badge: "Solo build — hardware to software",
-    category: "Networking",
-    stack: ["Python", "Linux", "TCP/IP", "Grafana", "Prometheus", "Go", "Docker"],
-    summaryProblem: "Home networks and local labs fail silently and blindly. Diagnosis usually happens only after something crashes.",
-    summarySolution: "Live topology mapping, ping jitter alerts, DNS sinkhole stats, and ARP auto-discovery.",
-    metrics: ["<0.2% network overhead", "Sub-second failover alert", "Real-time topology"],
-    imageQuery: "network topology visualization dark UI, glowing nodes and connection lines, premium tech aesthetic",
-    problem: "When running self-hosted servers, micro-PCs, and smart home appliances on a local subnet, intermittent network degradation and DNS resolution dropouts often go unnoticed until a service becomes completely unreachable.",
-    context: "I wanted a continuous, lightweight network watchdog that runs on a Raspberry Pi / low-power Linux box, constantly mapping device availability, latency spikes, and gateway route stability without flooding the Wi-Fi spectrum with noisy scans.",
-    myRole: "Designed the architecture, wrote the daemon in Python/Go, built Prometheus metrics exporters, configured custom Grafana dashboards, and simulated network partitions to verify automated alerting.",
+    id: "decentralized-grid",
+    title: "Decentralize Scalable Grid",
+    tagline: "Decentralized solar microgrid management system on ICP blockchain with peer-to-peer energy routing and resilient smart distribution",
+    badge: "Live on Blockchain — Web3 & Distributed Systems",
+    category: "Blockchain",
+    stack: ["React.js", "Spring Boot", "ICP Blockchain", "Smart Grids", "REST APIs", "Microservices"],
+    summaryProblem: "Centralized energy distribution networks are prone to catastrophic single points of failure, line transmission losses, and cannot dynamically handle peer-to-peer renewable solar energy trading.",
+    summarySolution: "Independent node microgrid system running on ICP blockchain, facilitating resilient peer-to-peer energy routing, load balancing, and autonomous energy distribution without centralized control.",
+    metrics: ["Live on ICP Blockchain", "100% decentralized routing", "Fault-tolerant independent nodes"],
+    imageQuery: "decentralized smart solar grid network visualization, glowing nodes and power lines, dark futuristic UI",
+    problem: "Traditional power grids rely on centralized management. When local solar prosumers generate surplus electricity, selling power back to traditional power stations causes transmission losses, pricing opacity, and grid bottlenecks.",
+    context: "Engineered to explore distributed systems and blockchain decentralization applied to clean renewable energy. The platform manages independent solar microgrids, balances battery storage, and enables peer-to-peer energy sharing across local nodes.",
+    myRole: "Full-Stack & Blockchain Developer. Built the React.js web interface, designed Spring Boot microservices for node telemetry, and deployed smart grid distribution logic onto the Internet Computer Protocol (ICP) blockchain.",
+    liveUrl: "https://4nish-4aaaa-aaaag-ali2a-cai.icp0.io/",
     architecture: {
-      title: "Network Telemetry Flow",
-      description: "Passive discovery to real-time visual telemetry",
+      title: "Decentralized Microgrid Routing Architecture",
+      description: "How distributed energy telemetry flows between solar microgrid nodes and ICP blockchain",
       nodes: [
-        { id: "1", name: "Local Subnet Devices", type: "infra", description: "Servers, IoT, laptops, router gateway", tech: "ARP / DHCP", rationale: "Target nodes to monitor" },
-        { id: "2", name: "NetMap Daemon", type: "service", description: "Passive ARP snooping & async ICMP/DNS pings", tech: "Python / Scapy", rationale: "Maintains <0.2% traffic overhead" },
-        { id: "3", name: "Prometheus Collector", type: "service", description: "Scrapes latency, packet loss, and jitter gauges", tech: "Prometheus TSDB", rationale: "Standard time-series database with retention policies" },
-        { id: "4", name: "Grafana Visualization", type: "client", description: "Live dark-mode topology and latency heatmap", tech: "Grafana 10", rationale: "High contrast visual dashboard for instant incident detection" },
-        { id: "5", name: "Alertmanager", type: "service", description: "Triggers webhook on >2% packet drop over 30s", tech: "Telegram Webhook / Pushover", rationale: "Immediate phone notification before user notices lag" }
+        { id: "1", name: "Solar Node Prosumers", type: "infra", description: "Rooftop solar panels, battery inverters, and IoT energy meters", tech: "Microgrid IoT", rationale: "Edge energy producers and storage cells" },
+        { id: "2", name: "Spring Boot Node Service", type: "service", description: "Aggregates kilowatt-hour telemetry, calculates net surplus, and checks node health", tech: "Spring Boot Microservice", rationale: "Handles fast local telemetry before blockchain commit" },
+        { id: "3", name: "Smart Energy Routing Logic", type: "service", description: "Matches local surplus with nearest deficit nodes to minimize line losses", tech: "Algorithmic Routing", rationale: "Optimizes peer-to-peer power transfer efficiency" },
+        { id: "4", name: "ICP Blockchain Canister", type: "database", description: "Immutable decentralized ledger recording energy transfer events and node stakes", tech: "Internet Computer Protocol", rationale: "Eliminates centralized single points of failure" },
+        { id: "5", name: "React Monitoring Dashboard", type: "client", description: "Real-time visual interface displaying grid frequency, storage levels, and peer transfers", tech: "React.js SPA", rationale: "Allows node operators to observe grid status live" }
       ]
     },
     technologies: [
-      { name: "Python / Go", role: "Daemon Service", why: "Low memory footprint (<40MB RAM) for 24/7 background operation on ARM hardware." },
-      { name: "Prometheus", role: "Time-series Store", why: "Efficient storage for high-frequency latency measurements." },
-      { name: "Grafana", role: "Metrics UI", why: "Rich time-series graphing, customizable dark theme panels, and threshold alerts." },
-      { name: "Linux / systemd", role: "Process Supervisor", why: "Automatic restart on fault and native journalctl logging." }
+      { name: "React.js", role: "Grid Operator Frontend", why: "Real-time reactive state updates for live power generation gauges, battery percentages, and transaction logs." },
+      { name: "Spring Boot", role: "Node Telemetry Microservices", why: "Efficient multi-threading for continuous sensor reading and reliable RESTful API communication." },
+      { name: "ICP Blockchain", role: "Decentralized Execution & Storage", why: "Native on-chain web hosting and smart contract canisters with sub-second finality and zero gas fees for end users." },
+      { name: "Smart Grid Routing", role: "Energy Distribution Engine", why: "Guarantees fault-tolerant microgrid operation even during wider grid blackouts." }
     ],
     challenges: [
       {
-        problem: "Network Flooding: Naive active ICMP sweeps across 254 IP addresses every 5 seconds triggered packet loss on older IoT microcontrollers.",
-        resolution: "Switched to passive kernel ARP table monitoring combined with staggered, jittered probes only targeting active leases."
+        problem: "Network Partitions: If a neighborhood node lost external connectivity, it would freeze energy distribution.",
+        resolution: "Architected autonomous islanding: nodes can operate as isolated self-balancing microgrids and automatically reconcile transactions upon reconnection."
       },
       {
-        problem: "False Positives during Sleep States: Laptops entering sleep mode triggered spurious disconnect notifications.",
-        resolution: "Added hysteresis: an alert only fires if a device misses 6 consecutive heartbeat probes over 90 seconds."
+        problem: "Blockchain Finality & Telemetry Frequency: Committing sub-second sensor readings directly to a blockchain is cost and throughput prohibitive.",
+        resolution: "Batched local telemetry in Spring Boot microservices and committed verified rolling settlement blocks to the ICP canister every 30 seconds."
       }
     ],
     decisions: [
       {
-        decision: "Prometheus + Grafana instead of building custom charting from scratch",
-        alternativeRejected: "Custom web UI with Chart.js",
-        rationale: "Grafana provides enterprise-grade alerting, threshold rules, and time-range scrubbing without reinventing time-series math."
+        decision: "ICP Blockchain over Ethereum / EVM",
+        alternativeRejected: "Ethereum / Polygon",
+        rationale: "ICP provides direct on-chain web canister hosting and reverse-gas model, so microgrid operators do not pay transaction gas fees."
       },
       {
-        decision: "Single binary Go agent alongside Python scraper",
-        alternativeRejected: "Heavy Electron desktop app",
-        rationale: "Must run headlessly on headless edge devices with minimal CPU consumption."
+        decision: "Decoupled microservice architecture for sensor ingestion",
+        alternativeRejected: "Monolithic app",
+        rationale: "Enabled independent node scaling across distributed solar installations."
       }
     ],
     lessons: [
-      "Real-world networking is full of edge cases like asymmetric routing and Wi-Fi power-save modes that pure software developers rarely consider.",
-      "Observability is only as good as the signal-to-noise ratio — alerting too frequently trains users to ignore alerts."
+      "Decentralized systems must be resilient to edge node dropout from day one.",
+      "Energy routing algorithms must account for physical line impedance, not just digital ledger balances."
     ],
     futureImprovements: [
-      "Add automated traceroute triggers that automatically fire when hop latency exceeds 50ms.",
-      "Integrate speedtest-cli scheduling during low-utilization 3 AM windows."
+      "Integrate machine learning predictive weather modeling to forecast solar generation 24 hours ahead.",
+      "Develop EV charging station dynamic load-balancing integration."
     ]
   },
   {
-    id: "flowdesk",
-    title: "Flowdesk — Freelance OS",
-    tagline: "Proposals, client onboarding, milestone invoices and delivery in one cohesive flow",
-    badge: "Freelance client build",
-    category: "Web Applications",
-    stack: ["React", "Node.js", "PostgreSQL", "Stripe Connect", "Tailwind CSS", "PDFKit"],
-    summaryProblem: "Freelancers juggle 4-5 disconnected tools for proposals, contract signatures, time-tracking, and invoicing.",
-    summarySolution: "One integrated platform: proposals become contracts, contracts become milestone invoices, with automated Stripe payouts.",
-    metrics: ["100% automated milestone billing", "<3 min invoice creation", "Zero lost invoices"],
-    imageQuery: "minimal freelance invoicing web app dark mode, elegant clean interface, lime accent",
-    problem: "Freelance software engineers and IT consultants waste hours every week switching between Google Docs proposals, DocuSign contracts, Harvest timers, and Stripe dashboards, frequently leading to invoice discrepancies and payment delays.",
-    context: "Commissioned by a freelance collective to build a consolidated operating system where a project progresses naturally from an agreed proposal to live deliverables and milestone-triggered payouts.",
-    myRole: "Full-Stack Engineer. Built the React frontend, structured the PostgreSQL database schemas, implemented secure Stripe Connect webhooks, and created automated PDF invoice generation.",
+    id: "sales-bi-analytics",
+    title: "Sales Data Analysis & BI Dashboard",
+    tagline: "Executive decision intelligence pipeline transforming multi-source sales datasets with advanced SQL into interactive Power BI KPI dashboards",
+    badge: "Enterprise Analytics — SQL & Power BI",
+    category: "Data & BI",
+    stack: ["SQL (MySQL/PostgreSQL)", "Power BI", "ETL Pipelines", "Data Modeling", "CTEs & Window Functions"],
+    summaryProblem: "Enterprise sales data scattered across disparate spreadsheets and transactional databases caused inconsistent reporting and blind spots in regional performance.",
+    summarySolution: "Engineered an end-to-end data transformation pipeline using advanced SQL joins, CTEs, and window functions feeding an interactive Power BI dashboard with KPI drill-downs.",
+    metrics: ["100% data consistency across sources", "Executive KPI visualization", "Multi-source SQL ETL"],
+    imageQuery: "modern enterprise sales analytics dashboard, dark background, glowing green and blue charts, Power BI aesthetic",
+    problem: "Executives and regional managers lacked visibility into product profitability, customer segment churn, and quarter-over-quarter revenue growth due to inconsistent, uncleaned transactional records across disparate business units.",
+    context: "Developed to demonstrate enterprise data analysis, SQL proficiency, and business intelligence reporting. Focused on transforming millions of transactional records into actionable decision-support dashboards.",
+    myRole: "Data Analyst & BI Engineer. Designed the dimensional star schema, authored advanced SQL queries (CTEs, window functions, conditional aggregations), built data cleaning pipelines, and engineered interactive Power BI dashboards.",
     architecture: {
-      title: "Proposal to Payout Flow",
-      description: "Lifecycle of a freelance contract and payment release",
+      title: "Sales BI Data Pipeline",
+      description: "From raw transactional records to executive decision intelligence",
       nodes: [
-        { id: "1", name: "Freelancer", type: "client", description: "Creates scope & milestone breakdown", tech: "React SPA", rationale: "Fast markdown-supported proposal builder" },
-        { id: "2", name: "Client Portal", type: "client", description: "Client signs scope and approves deliverables", tech: "Tokenized public link", rationale: "Frictionless approval with no login required" },
-        { id: "3", name: "Node API", type: "service", description: "Business logic, milestone state transitions", tech: "Node / Express / Prisma", rationale: "Type-safe database transactions" },
-        { id: "4", name: "Postgres DB", type: "database", description: "Normalized relational model: Clients, Projects, Milestones, Invoices", tech: "PostgreSQL", rationale: "Strict foreign keys and atomic payment state" },
-        { id: "5", name: "Stripe Connect", type: "service", description: "Credit card / ACH processing with automatic payouts", tech: "Stripe API & Webhooks", rationale: "Handles PCI compliance and automated deposit" },
-        { id: "6", name: "PDF Generator", type: "service", description: "Creates compliant tax receipts and delivery certificates", tech: "PDFKit on Node worker", rationale: "Instant downloadable receipts for clients" }
+        { id: "1", name: "Raw Multi-source Data", type: "database", description: "Transactional sales logs, customer databases, and product inventories", tech: "CSV / SQL tables", rationale: "Disparate source data stores" },
+        { id: "2", name: "SQL Data Cleaning Layer", type: "service", description: "Handles nulls, deduplication, currency standardization, and type casting", tech: "Advanced SQL", rationale: "Guarantees clean data hygiene before modeling" },
+        { id: "3", name: "Dimensional Star Schema", type: "database", description: "FactSales table connected to DimCustomer, DimProduct, DimRegion, and DimDate", tech: "Star Schema Modeling", rationale: "Optimizes analytical query performance and drill-down flexibility" },
+        { id: "4", name: "KPI Calculation Engine", type: "service", description: "Calculates YoY revenue growth, profit margin percentages, and customer retention metrics", tech: "SQL Window Functions & DAX", rationale: "Delivers mathematically verified executive metrics" },
+        { id: "5", name: "Interactive Power BI Dashboard", type: "client", description: "Executive KPI dashboard with dynamic slicers, revenue heatmaps, and trend projections", tech: "Power BI", rationale: "Empowers leadership to make data-driven decisions in seconds" }
       ]
     },
     technologies: [
-      { name: "React + Vite", role: "Client App", why: "Instant page navigation and snappy optimistic UI updates." },
-      { name: "Node.js / Express", role: "Backend API", why: "Fast JSON processing and rich ecosystem for Stripe and PDF generation." },
-      { name: "PostgreSQL with Prisma", role: "Database", why: "Strong data integrity guarantees essential for financial records." },
-      { name: "Tailwind CSS", role: "Styling", why: "Custom dark theme matching professional modern SaaS aesthetic." }
+      { name: "Advanced SQL", role: "Data Transformation & ETL", why: "Utilized complex joins, CTEs, and window functions (ROW_NUMBER, RANK, LAG/LEAD) for precise trend detection." },
+      { name: "Power BI", role: "Executive Visualization", why: "Industry-standard BI platform with rich interactive filtering, cross-highlighting, and DAX measures." },
+      { name: "Dimensional Data Modeling", role: "Schema Design", why: "Star schema architecture separates facts from dimensions for fast aggregation across millions of rows." },
+      { name: "Data Cleaning Pipelines", role: "Quality Assurance", why: "Eliminates duplicate entries and anomalies for trusted business metrics." }
     ],
     challenges: [
       {
-        problem: "Stripe Webhook Concurrency: When clients paid multi-milestone invoices simultaneously, duplicate event triggers risked double-crediting.",
-        resolution: "Implemented idempotent webhook processing storing Stripe event IDs with database transaction locks."
+        problem: "Inconsistent Regional Date Formats & Currencies: Sales logs from different regions used conflicting date standards (DD/MM/YYYY vs MM/DD/YYYY) and mixed currency units.",
+        resolution: "Built a standardized SQL ingestion script using explicit regex casting, ISO-8601 date parsing, and a daily exchange rate dimension table."
       },
       {
-        problem: "PDF Generation Performance: Server-side headless browsers (Puppeteer) consumed too much RAM on the low-tier VPS.",
-        resolution: "Replaced Puppeteer with lightweight native streaming PDFKit, cutting memory footprint by 88% and generation time to 80ms."
+        problem: "Slow Dashboard Refresh on Large Datasets: Complex aggregations in initial Power BI queries caused noticeable report latency.",
+        resolution: "Pushed heavy aggregation computations upstream into SQL database views, reducing Power BI dataset load time by over 70%."
       }
     ],
     decisions: [
       {
-        decision: "Tokenized Magic Links for Client Approvals instead of requiring client user accounts",
-        alternativeRejected: "Mandatory client signup with email/password",
-        rationale: "Clients hated creating another password just to approve a milestone, causing approval delays."
+        decision: "Star Schema over flat denormalized tables",
+        alternativeRejected: "One massive wide table",
+        rationale: "Star schema maintains strict dimension integrity, reduces storage footprint, and enables flexible multi-dimensional slicing."
       },
       {
-        decision: "Single Postgres database with multi-tenant row level security",
-        alternativeRejected: "Database-per-tenant architecture",
-        rationale: "Significantly simpler migrations and backup administration for an early-stage product."
+        decision: "SQL-first transformation over Power Query only",
+        alternativeRejected: "Doing all transformations in Power Query UI",
+        rationale: "Writing raw SQL transformations allows version control in Git and makes the data pipeline database-agnostic."
       }
     ],
     lessons: [
-      "Reducing client friction directly correlates with how fast invoices get paid.",
-      "Financial software requires defensive coding: every balance calculation must be handled in integer cents on the backend, never floating point."
+      "Data cleaning and modeling represent 80% of successful business intelligence projects.",
+      "Clear visual hierarchy and KPI callouts drive executive adoption far better than cluttered chart walls."
     ],
     futureImprovements: [
-      "Add automated recurring retainer contracts with monthly Stripe auto-charge.",
-      "Integrate bank feed reconciliation via Plaid."
+      "Add automated anomaly detection alerts when regional sales drop more than 2 standard deviations.",
+      "Build predictive forecasting model using Python statsmodels for next-quarter demand planning."
+    ]
+  },
+  {
+    id: "windows-sysadmin-lab",
+    title: "Windows System Administration & Troubleshooting Lab",
+    tagline: "Enterprise IT support simulation: user management, DNS/DHCP configuration, and rapid incident resolution workflows",
+    badge: "IT Support & Systems Administration",
+    category: "Systems",
+    stack: ["VMware", "Windows Server", "TCP/IP", "DNS", "DHCP", "Incident Management", "Ticket Resolution"],
+    summaryProblem: "Enterprise IT operations suffer from slow incident resolution, permission configuration drift, and poor root-cause documentation when systems fail.",
+    summarySolution: "Built a simulated enterprise IT environment to diagnose system, application, and network failures, configure DNS/DHCP, and execute rapid incident triage workflows.",
+    metrics: ["<15 min simulated ticket resolution", "Zero unauthorized permission escalations", "Complete SOP documentation"],
+    imageQuery: "system administration terminal interface, network topology, server rack diagnostic screen, dark mode",
+    problem: "In corporate environments, misconfigured network protocols, DNS resolution errors, and permission misalignments cause severe productivity bottlenecks and downtime for end users.",
+    context: "Developed as a comprehensive hands-on laboratory environment to master enterprise IT operations, system administration, network troubleshooting, and customer-facing incident management workflows.",
+    myRole: "Systems Administrator & Support Engineer. Configured virtualized Windows Server environments in VMware, managed Active Directory user accounts and group policies, resolved TCP/IP networking faults, and maintained incident resolution documentation.",
+    architecture: {
+      title: "Enterprise IT Support Simulation Flow",
+      description: "How incident tickets are captured, diagnosed, resolved, and documented",
+      nodes: [
+        { id: "1", name: "End-User Ticket Submission", type: "client", description: "Reported incident: network unreachable, DNS failure, or access denied", tech: "Ticketing Workflow", rationale: "Captures symptoms and urgency" },
+        { id: "2", name: "Triage & Diagnostics", type: "service", description: "Verifies OSI layer connectivity: IP configuration, gateway ping, DNS resolution, port status", tech: "CLI / PowerShell / ipconfig / nslookup", rationale: "Isolates network layer vs application layer" },
+        { id: "3", name: "System Administration Core", type: "service", description: "Windows Server: user permissions, DHCP scopes, DNS zone files, and services", tech: "Windows Server / VMware", rationale: "Corrects root configuration issues" },
+        { id: "4", name: "Resolution Verification", type: "service", description: "Confirms end-to-end service restoration and logs root cause analysis", tech: "Incident Management SOP", rationale: "Ensures no recurring configuration drift" }
+      ]
+    },
+    technologies: [
+      { name: "VMware", role: "Virtualization Infrastructure", why: "Enables isolated multi-node network simulations for client-server testing." },
+      { name: "Windows Server", role: "Enterprise Administration", why: "Core enterprise platform for user access management, policy enforcement, and server roles." },
+      { name: "TCP/IP, DNS, DHCP", role: "Core Network Protocols", why: "Fundamental networking standards required for diagnosing enterprise communication failures." },
+      { name: "Incident Management", role: "Operational Discipline", why: "Structured issue triage, root cause analysis (RCA), and documentation ensure reliable system operations." }
+    ],
+    challenges: [
+      {
+        problem: "Intermittent DNS Resolution Failures: Client VMs intermittently failed to resolve intranet hostnames due to conflicting DNS forwarders.",
+        resolution: "Diagnosed using nslookup and Wireshark; reconfigured primary and secondary DNS zone forwarders and flushed client DNS resolver caches."
+      },
+      {
+        problem: "DHCP Scope Exhaustion: Virtual lab machines running test simulations depleted available IP leases.",
+        resolution: "Re-engineered subnet masks to expand IP address pool and shortened lease duration for temporary development instances."
+      }
+    ],
+    decisions: [
+      {
+        decision: "Virtualized VMware lab environment over single physical host",
+        alternativeRejected: "Single desktop OS",
+        rationale: "Allowed realistic simulation of enterprise multi-hop routing, domain controllers, and isolated VLANs."
+      },
+      {
+        decision: "Strict documentation of standard operating procedures (SOPs)",
+        alternativeRejected: "Informal troubleshooting",
+        rationale: "Aligns with enterprise ITIL incident management practices and enables reproducible resolution steps."
+      }
+    ],
+    lessons: [
+      "Most mysterious software bugs are actually network or permission misconfigurations underneath.",
+      "Clear, empathetic communication with end users during incidents is just as critical as technical troubleshooting."
+    ],
+    futureImprovements: [
+      "Automate repetitive user provisioning tasks using PowerShell automation scripts.",
+      "Build a self-service password reset and basic diagnostic portal for end users."
     ]
   }
 ];
 
 export const TECHNICAL_DNA: TechItem[] = [
-  // Frontend
-  { name: "React", category: "Frontend", status: "Used in Projects", evidence: "Built GridOps, Flowdesk, and this interactive portfolio with custom state architectures and animations.", projects: ["GridOps", "Flowdesk", "Portfolio"], description: "Component lifecycle, custom hooks, performance tuning, and accessible component architectures." },
-  { name: "Next.js", category: "Frontend", status: "Used in Projects", evidence: "Production deployment with App Router, server actions, and dynamic route handlers.", projects: ["GridOps"], description: "SSR, SSG, streaming responses, and edge caching." },
-  { name: "TypeScript", category: "Frontend", status: "Used in Projects", evidence: "Strict type safety across full-stack applications with zero loose `any` casts.", projects: ["GridOps", "Flowdesk", "Portfolio"], description: "Generics, Discriminated Unions, Zod validation, and utility types." },
-  { name: "Tailwind CSS", category: "Frontend", status: "Used in Projects", evidence: "Engineered complete design systems with custom palettes, CSS variables, and dark themes.", projects: ["GridOps", "Flowdesk", "Portfolio"], description: "Utility-first CSS, custom plugins, and responsive grid layouts." },
-  { name: "Three.js / 3D", category: "Frontend", status: "Working Knowledge", evidence: "Interactive 3D technology ecosystem core, particle fields, and custom shaders.", projects: ["Portfolio 3D Core"], description: "Scene graphs, camera controls, materials, buffers, and requestAnimationFrame loops." },
-  
-  // Backend
-  { name: "Node.js / Express", category: "Backend", status: "Used in Projects", evidence: "REST APIs, authentication middleware, Stripe webhook pipelines, and PDF generation.", projects: ["Flowdesk"], description: "Event loop, asynchronous streams, middleware architecture, and security hardening." },
-  { name: "Python (FastAPI)", category: "Backend", status: "Used in Projects", evidence: "High-performance async API for document chunking, embeddings, and vector similarity search.", projects: ["GridOps"], description: "Pydantic validation, async/await, background tasks, and AI model orchestration." },
-  { name: "Linux Bash Scripting", category: "Backend", status: "Used in Projects", evidence: "Automated backup cron jobs, log rotation, and server provisioning scripts.", projects: ["NetMap"], description: "Shell scripting, piping, process monitoring, and systemd service management." },
-  { name: "Go", category: "Backend", status: "Working Knowledge", evidence: "Lightweight background daemons and network ping probes.", projects: ["NetMap Agent"], description: "Goroutines, channels, fast binary compilation, and low-latency systems.", learnedNext: "Deepening concurrent network socket handling." },
+  // Languages
+  { name: "Java", category: "Backend", status: "Used in Projects", evidence: "Core language for Spring Boot REST APIs, microservices, and backend architecture in Agentic AI and Decentralized Grid.", projects: ["Agentic AI for Cloud", "Decentralize Scalable Grid"], description: "OOP principles, collections framework, multi-threading, stream API, and Spring Boot integration." },
+  { name: "Spring Boot", category: "Backend", status: "Used in Projects", evidence: "Built RESTful microservices, API mediation layers, dependency injection, and security filters.", projects: ["Agentic AI for Cloud", "Decentralize Scalable Grid", "Altitudes Internship"], description: "REST APIs, Spring Data JPA, Spring Security, microservices architecture, and Postman testing." },
+  { name: "React.js", category: "Frontend", status: "Used in Projects", evidence: "Engineered responsive user interfaces, real-time architecture visualizers, and decentralized grid dashboards.", projects: ["Agentic AI for Cloud", "Decentralize Scalable Grid", "Portfolio"], description: "Functional components, custom hooks, virtual DOM, component-based design, and Tailwind CSS." },
+  { name: "SQL", category: "Data", status: "Used in Projects", evidence: "Processed multi-source transactional datasets using complex joins, CTEs, and window functions.", projects: ["Sales Data Analysis & BI Dashboard"], description: "Relational database design, query optimization, data transformation, MySQL, and PostgreSQL." },
+  { name: "Python", category: "Backend", status: "Used in Projects", evidence: "Scripting, AI prompt workflows, data analysis, and automation.", projects: ["AI & Systems Experiments"], description: "Async programming, data handling, API integrations, and AI model orchestration." },
+  { name: "JavaScript / TypeScript", category: "Frontend", status: "Used in Projects", evidence: "Strict type safety and interactive UI logic across all web applications.", projects: ["Agentic AI for Cloud", "Decentralize Scalable Grid", "Portfolio"], description: "ES6+, async/await, DOM manipulation, strict type checking, and modern web APIs." },
 
-  // AI & RAG
-  { name: "RAG Architecture", category: "AI", status: "Used in Projects", evidence: "Document ingestion, hybrid BM25 + dense retrieval, re-ranking, and citation generation.", projects: ["GridOps", "Ask Deepak's AI"], description: "Semantic search, chunking strategies, prompt guardrails, and context budgeting." },
-  { name: "pgvector", category: "AI", status: "Used in Projects", evidence: "Self-hosted PostgreSQL vector index (HNSW / IVFFlat) handling thousands of doc chunks.", projects: ["GridOps"], description: "Vector distance metrics, cosine similarity queries, and combined relational joins." },
-  { name: "AI Agents & Workflows", category: "AI", status: "Currently Learning", evidence: "Multi-step tool-use pipelines, planning loops, and state machines with LangGraph.", projects: ["Lab Experiments"], description: "Autonomous task execution, structured JSON outputs, and reflection patterns." },
-  { name: "Prompt Security & Guardrails", category: "AI", status: "Used in Projects", evidence: "Layered protection against prompt injection, jailbreaks, and sensitive data leakage.", projects: ["Ask Deepak's AI", "GridOps"], description: "Input regex sanitization, output verification schemas, and confidence thresholding." },
+  // AI & Cloud
+  { name: "Agentic AI & Prompt Engineering", category: "AI", status: "Used in Projects", evidence: "Architected multi-agent AI system decomposing requirements into verifiable sub-goals.", projects: ["Agentic AI for Cloud", "Altitudes Internship"], description: "Prompt chaining, structured JSON outputs, few-shot prompting, and guardrails." },
+  { name: "LLMs (OpenAI, Gemini, Llama)", category: "AI", status: "Used in Projects", evidence: "Integrated LLM backbones with Spring Boot REST APIs for automated cloud diagram synthesis.", projects: ["Agentic AI for Cloud", "Altitudes Internship"], description: "Model selection, temperature calibration, context window management, and RAG architectures." },
+  { name: "AWS (EC2, S3, Lambda)", category: "Cloud", status: "Used in Projects", evidence: "Certified AWS Academy Cloud Foundations; deployed backend on EC2, assets on S3, and serverless tasks on Lambda.", projects: ["Agentic AI for Cloud"], description: "IAM policies, VPC subnets, security groups, S3 storage tiers, and serverless compute." },
+  { name: "ICP Blockchain", category: "Cloud", status: "Used in Projects", evidence: "Deployed decentralized solar microgrid live on Internet Computer Protocol blockchain canisters.", projects: ["Decentralize Scalable Grid"], description: "Decentralized canisters, smart contracts, reverse-gas model, and peer-to-peer routing." },
 
-  // Data
-  { name: "PostgreSQL", category: "Data", status: "Used in Projects", evidence: "Relational modeling, indexing strategies, foreign key constraints, and ACID transactions.", projects: ["GridOps", "Flowdesk"], description: "Schema normalization, complex queries, connection pooling, and pgvector extension." },
-  { name: "Redis", category: "Data", status: "Working Knowledge", evidence: "Rate limiting token buckets and session caching in Node APIs.", projects: ["Flowdesk"], description: "In-memory key-value data structures, pub/sub, and expiration policies." },
-  { name: "Prometheus", category: "Data", status: "Used in Projects", evidence: "Metric scraping, PromQL queries, and time-series aggregation for edge infrastructure.", projects: ["NetMap"], description: "Counter, Gauge, and Histogram metrics, scrape configurations, and retention." },
+  // Networking & Systems
+  { name: "TCP/IP & OSI Model", category: "Networking", status: "Used in Projects", evidence: "Diagnosed packet routing, subnetting, TCP handshakes, and port forwarding.", projects: ["Windows SysAdmin Lab", "Cisco CCNA Training"], description: "Packet structure, 7-layer OSI model, CIDR subnetting, NAT, and network troubleshooting." },
+  { name: "DNS & DHCP", category: "Networking", status: "Used in Projects", evidence: "Configured Windows Server DHCP scopes, DNS forwarders, and resolved resolution failures.", projects: ["Windows SysAdmin Lab"], description: "A/AAAA, CNAME, zone transfers, lease management, and nslookup diagnostics." },
+  { name: "VMware & Windows Server", category: "Networking", status: "Used in Projects", evidence: "Configured enterprise virtualized environments for IT support and system simulation.", projects: ["Windows SysAdmin Lab"], description: "Virtual networking, VM provisioning, user access control, and incident management." },
 
-  // Networking
-  { name: "TCP/IP & Subnetting", category: "Networking", status: "Used in Projects", evidence: "Subnet calculations, VLAN isolation, routing tables, and gateway configurations.", projects: ["NetMap", "Home Lab"], description: "OSI layer model, packet framing, CIDR math, NAT, and port forwarding." },
-  { name: "DNS & DHCP", category: "Networking", status: "Used in Projects", evidence: "Configured local Pi-hole sinkhole, authoritative DNS records, and split-horizon DNS.", projects: ["NetMap"], description: "A/AAAA, CNAME, MX, TXT records, propagation, and lease management." },
-  { name: "Wireshark & Packet Analysis", category: "Networking", status: "Working Knowledge", evidence: "Diagnosing TCP handshake resets, DNS lookup delays, and TLS negotiation failures.", projects: ["NetMap"], description: "Packet sniffing, display filters, TCP stream reconstruction, and protocol debugging." },
-  { name: "VPN / WireGuard", category: "Networking", status: "Used in Projects", evidence: "Encrypted point-to-point tunnels between remote development nodes and home lab servers.", projects: ["Home Lab"], description: "Public key cryptography, AllowedIPs routing, and split tunneling." },
-
-  // Cloud & DevOps
-  { name: "Docker & Compose", category: "Cloud", status: "Used in Projects", evidence: "Multi-stage builds, non-root users, volume persistence, and compose multi-container orchestration.", projects: ["GridOps", "NetMap", "Flowdesk"], description: "Container lifecycle, bridge networks, resource limits, and healthchecks." },
-  { name: "CI/CD (GitHub Actions)", category: "Cloud", status: "Used in Projects", evidence: "Automated linting, TypeScript checking, test runners, and SSH deployment hooks.", projects: ["GridOps", "Portfolio"], description: "Workflow triggers, secrets management, matrix builds, and artifact caching." },
-  { name: "AWS Fundamentals", category: "Cloud", status: "Currently Learning", evidence: "Deploying static assets to S3 + CloudFront, configuring EC2 instances with security groups.", projects: ["Cloud Lab"], description: "IAM policies, VPC subnets, S3 bucket policies, and CloudWatch logs.", learnedNext: "Terraform infrastructure as code." },
-  { name: "Reverse Proxies (Caddy/Nginx)", category: "Cloud", status: "Used in Projects", evidence: "Automated Let's Encrypt SSL termination, header forwarding, and WebSocket proxying.", projects: ["GridOps", "NetMap"], description: "Caddyfile configuration, proxy buffers, CORS headers, and gzip compression." }
-];
-
-export const FREELANCE_SERVICES: FreelanceService[] = [
-  {
-    id: "web-dev",
-    title: "Web Application Development",
-    category: "Full-Stack Development",
-    tagline: "Modern responsive web applications with rock-solid architecture and clean code",
-    problem: "Outdated or buggy web software hurts conversion, frustrates users, and is impossible to maintain or scale without constant developer firefighting.",
-    whatIBuild: [
-      "Custom SaaS platforms and client management dashboards",
-      "High-performance interactive marketing and portfolio sites",
-      "Internal operations portals and admin tools",
-      "API integrations with third-party payment and auth providers"
-    ],
-    tech: ["React", "Next.js", "TypeScript", "Node.js", "PostgreSQL", "Tailwind CSS"],
-    workflow: [
-      { step: "01. Architecture & Wireframe", detail: "Review requirements, model database schema, map API contracts, and agree on visual prototypes." },
-      { step: "02. Core Implementation", detail: "Build responsive frontend and robust backend in sprint milestones with live staging previews." },
-      { step: "03. Testing & Hardening", detail: "Validate edge cases, mobile responsiveness, auth boundaries, and Lighthouse performance." },
-      { step: "04. Handover & Deployment", detail: "Deploy to your cloud host, configure custom domains/SSL, and provide clean documentation." }
-    ],
-    deliverables: ["Full source code repository", "Dockerized deployment configuration", "API documentation & setup guide", "30 days post-launch support"],
-    typicalTimeline: "2 – 6 weeks depending on project scope"
-  },
-  {
-    id: "ai-integration",
-    title: "AI & RAG System Integration",
-    category: "Artificial Intelligence",
-    tagline: "Turn your company's documents into an accurate, grounded AI assistant that doesn't hallucinate",
-    problem: "Generic chatbots make up answers, leak sensitive company secrets, and offer zero citations, making them dangerous for real customer support.",
-    whatIBuild: [
-      "Internal knowledge base Q&A bots with verified citations",
-      "Customer support triage assistants that draft verified responses",
-      "Document summarization and automated data extraction pipelines",
-      "Multi-layer security guardrails against prompt injection and data leaks"
-    ],
-    tech: ["Python", "pgvector / Vector DBs", "RAG Pipelines", "FastAPI", "Next.js"],
-    workflow: [
-      { step: "01. Document Auditing", detail: "Analyze existing docs, identify formats, define chunking strategy, and establish ground truth." },
-      { step: "02. Pipeline & Vector DB", detail: "Build embedding ingestion pipeline with metadata tagging and hybrid BM25 search." },
-      { step: "03. Guardrail Configuration", detail: "Implement strict prompt constraints, citation requirements, and hallucination detectors." },
-      { step: "04. UI & Testing", detail: "Deliver a clean chat interface with clickable sources and test against edge-case queries." }
-    ],
-    deliverables: ["Ingestion pipeline script", "Configured vector database", "Frontend chat component / API", "Guardrail test suite report"],
-    typicalTimeline: "2 – 4 weeks"
-  },
-  {
-    id: "automation",
-    title: "Workflow Automation & Scripting",
-    category: "Automation",
-    tagline: "Eliminate repetitive manual tasks and connect tools that refuse to talk to each other",
-    problem: "Team members waste hours copying data between spreadsheets, CRMs, and email systems, leading to human error and delayed customer follow-ups.",
-    whatIBuild: [
-      "Automated data synchronization between webhooks, APIs, and databases",
-      "Scheduled reporting scripts and PDF invoice generation",
-      "Telegram/Slack alerting bots for critical system events",
-      "Custom web scraping and monitoring pipelines"
-    ],
-    tech: ["Python", "Node.js", "Cron / systemd", "REST Webhooks", "Docker"],
-    workflow: [
-      { step: "01. Process Mapping", detail: "Deconstruct the repetitive workflow, map inputs, failure points, and data targets." },
-      { step: "02. Script Engineering", detail: "Write resilient scripts with error handling, retries, and rate-limit compliance." },
-      { step: "03. Deployment & Scheduling", detail: "Deploy to a lightweight server or cloud worker with automated health monitoring." },
-      { step: "04. Logging & Verification", detail: "Establish audit logs and failure alerts so issues are caught immediately." }
-    ],
-    deliverables: ["Tested automation scripts", "Scheduling/service config", "Failover alert webhooks", "Operations documentation"],
-    typicalTimeline: "1 – 2 weeks"
-  },
-  {
-    id: "tech-support",
-    title: "Technical Support Systems & Dashboards",
-    category: "Systems & Infrastructure",
-    tagline: "Observability dashboards and internal diagnostic tools to keep your services healthy",
-    problem: "When servers or network links go down, teams find out from angry customer emails instead of automated diagnostic monitors.",
-    whatIBuild: [
-      "Custom Grafana & Prometheus monitoring dashboards",
-      "Network status and service uptime pages",
-      "Internal support ticketing triage interfaces",
-      "Server log aggregator viewers and search tools"
-    ],
-    tech: ["Prometheus", "Grafana", "Linux", "Docker", "Python", "React"],
-    workflow: [
-      { step: "01. Telemetry Audit", detail: "Identify critical metrics: CPU, memory, HTTP response latency, and network error rates." },
-      { step: "02. Exporter Setup", detail: "Install Prometheus exporters and configure metric collection intervals." },
-      { step: "03. Dashboard Design", detail: "Build high-contrast visual panels with meaningful warning and critical thresholds." },
-      { step: "04. Alert Routing", detail: "Connect notification webhooks to team Slack or email channels." }
-    ],
-    deliverables: ["Grafana dashboard JSON exports", "Prometheus configuration files", "Alerting rule definitions", "Incident response checklist"],
-    typicalTimeline: "1 – 3 weeks"
-  },
-  {
-    id: "prototype",
-    title: "Rapid MVP & Prototype Development",
-    category: "Product Engineering",
-    tagline: "Turn an idea into a functional, investor-ready or customer-testable software product in record time",
-    problem: "Founders spend months stuck in product design debates without getting a working product into users' hands to validate market demand.",
-    whatIBuild: [
-      "Functional Minimum Viable Products (MVPs) ready for first users",
-      "Clickable interactive proof-of-concept prototypes",
-      "Authentication, billing, and database infrastructure from day one",
-      "Clean codebase ready to scale rather than throwaway spaghetti code"
-    ],
-    tech: ["React", "Next.js", "TypeScript", "PostgreSQL", "Tailwind CSS"],
-    workflow: [
-      { step: "01. Scope Scoping", detail: "Cut unnecessary features to focus ruthlessly on the single core problem." },
-      { step: "02. Build Sprint", detail: "Rapid execution with daily async progress updates and staging URLs." },
-      { step: "03. User Acceptance", detail: "Verify end-to-end user journeys from signup to value delivery." },
-      { step: "04. Launch", detail: "Go live with analytics and monitoring enabled." }
-    ],
-    deliverables: ["Deployable web app MVP", "Clean GitHub repository", "Database migrations", "Architecture roadmap for V2"],
-    typicalTimeline: "3 – 5 weeks"
-  },
-  {
-    id: "consultation",
-    title: "Technical Architecture Consultation",
-    category: "Consulting",
-    tagline: "Architecture reviews, technology selection, and roadmapping before you write expensive code",
-    problem: "Choosing the wrong database, hosting model, or software pattern early can cost thousands of dollars and months of refactoring later.",
-    whatIBuild: [
-      "Full architecture review and bottleneck diagnosis",
-      "Technology stack recommendations tailored to your budget and scale",
-      "Security and networking posture assessments",
-      "Database schema and data flow optimization reports"
-    ],
-    tech: ["System Design", "Cloud Infrastructure", "Security Hardening", "Architecture Diagrams"],
-    workflow: [
-      { step: "01. Discovery Session", detail: "Deep dive into your current challenges, scale targets, and existing codebase." },
-      { step: "02. Independent Analysis", detail: "Review schemas, infrastructure setups, and API bottlenecks." },
-      { step: "03. Written Recommendations", detail: "Deliver a structured architecture report with trade-off matrices." },
-      { step: "04. Q&A Walkthrough", detail: "Interactive session to walk your team through the proposed implementation plan." }
-    ],
-    deliverables: ["Written Architecture Review Document", "Interactive Diagram (Mermaid / SVG)", "Risk Matrix", "Recommended Action Plan"],
-    typicalTimeline: "3 – 5 days"
-  }
+  // Data & Tools
+  { name: "Power BI", category: "Data", status: "Used in Projects", evidence: "Engineered executive KPI dashboards with interactive slicers and revenue performance metrics.", projects: ["Sales Data Analysis & BI Dashboard"], description: "Data modeling, DAX measures, star schema relationships, and executive reporting." },
+  { name: "Git & GitHub Actions", category: "Tools", status: "Used in Projects", evidence: "Active contributor at github.com/Deepakdudez with automated CI/CD deployment pipelines.", projects: ["Portfolio", "Decentralize Scalable Grid"], description: "Branching strategies, pull requests, automated GitHub Pages CI/CD, and version control." },
+  { name: "REST APIs & Postman", category: "Tools", status: "Used in Projects", evidence: "Designed, tested, and documented end-to-end request-response workflows.", projects: ["Altitudes Internship", "Agentic AI for Cloud"], description: "HTTP methods, status codes, JSON schemas, authentication headers, and API test suites." }
 ];
 
 export const TIMELINE_EVENTS = [
   {
-    year: "2024 – Present",
-    title: "Freelance IT & Systems Engineer",
-    category: "Freelancing",
-    desc: "Partnering with startups, small businesses, and agencies to build resilient web applications, custom AI assistants with pgvector RAG pipelines, and automated support dashboards. Focus on systems that don't break.",
-    highlight: "Shipped 12+ production client deliverables across web, automation, and AI."
+    year: "Jun 2025 – Jul 2025",
+    title: "Full Stack Developer Intern — Altitudes",
+    category: "Work Experience",
+    desc: "Designed and shipped a natural-language-to-cloud-architecture feature, allowing users to describe infrastructure in plain English and receive generated AWS diagrams — integrating Spring Boot REST APIs with an LLM backbone. Built data-driven frontend components in HTML, CSS, JavaScript, and React.js with reusable UI patterns, reducing iteration time. Integrated REST APIs end-to-end across backend and frontend layers. Applied AI-assisted coding tools (Copilot, Cursor) to accelerate development.",
+    highlight: "Shipped natural language to AWS architecture feature using Spring Boot & LLMs."
   },
   {
-    year: "2023 – 2024",
-    title: "Systems & Support Engineering Internship",
-    category: "Experience",
-    desc: "Diagnosed edge network connectivity issues, monitored server infrastructure, maintained Linux hosts, and automated repetitive support ticket triaging using Python scripts and internal webhooks.",
-    highlight: "Cut routine manual server check time by 70% with automated bash/cron watchdog."
-  },
-  {
-    year: "2022 – 2023",
-    title: "Technical Exploration — Networking, Linux & AI",
-    category: "Exploration",
-    desc: "Built a dedicated home lab running Linux hosts, configured subnets, VLANs, reverse proxies (Caddy/Nginx), and analyzed packet behaviors with Wireshark. Began experimenting with local LLMs, embeddings, and vector databases.",
-    highlight: "Created NetMap to monitor real-time packet loss across 12 home lab devices."
-  },
-  {
-    year: "2020 – 2024",
-    title: "Bachelor of Technology in Information Technology",
+    year: "2022 – 2026",
+    title: "B.Tech in Information Technology — SKCET",
     category: "Education",
-    desc: "Comprehensive coursework in Operating Systems, Computer Networks, Database Management Systems, Data Structures & Algorithms, and Distributed Computing. Led final-year engineering project on decentralized data reliability.",
-    highlight: "Graduated with strong foundation in core computer science and systems architecture."
+    desc: "Sri Krishna College of Engineering and Technology, Coimbatore, Tamil Nadu. Maintained a CGPA of 7.50 / 10.0 with core focus in Data Structures, Database Management Systems, Computer Networks, Operating Systems, Full Stack Engineering, and Cloud Technologies. Built and published decentralized blockchain applications and AI architecture generators.",
+    highlight: "Maintained 7.50 CGPA while publishing decentralized blockchain energy grid and AI architecture generator."
+  },
+  {
+    year: "2021 – 2022",
+    title: "Intermediate / Higher Secondary — Kids Club",
+    category: "Education",
+    desc: "Kids Club Matriculation Higher Secondary School, Tiruppur, Tamil Nadu. Completed higher secondary education with 76% in Mathematics, Physics, Chemistry, and Computer Science, establishing strong analytical and computational foundations.",
+    highlight: "Graduated with 76% score with strong performance in Mathematics and Computer Science."
+  }
+];
+
+export const FREELANCE_SERVICES: FreelanceService[] = [
+  {
+    id: "fullstack-dev",
+    title: "Full-Stack Web Development",
+    category: "Engineering",
+    tagline: "High-performance web applications built with React.js, Spring Boot, and robust RESTful APIs",
+    problem: "Outdated or buggy web systems hurt conversion, frustrate users, and are difficult to maintain without constant developer firefighting.",
+    whatIBuild: [
+      "Interactive modern React.js frontend applications",
+      "Enterprise-grade Java Spring Boot RESTful microservices",
+      "Secure API integration, auth flows, and database schemas",
+      "Responsive UI/UX with Tailwind CSS and clean component architecture"
+    ],
+    tech: ["React.js", "Java", "Spring Boot", "REST APIs", "Tailwind CSS", "MySQL / PostgreSQL"],
+    workflow: [
+      { step: "01. Architecture & API Contracts", detail: "Review requirements, model database schemas, and define clear RESTful API endpoints." },
+      { step: "02. Core Implementation", detail: "Build responsive React components and Spring Boot services in testable milestones." },
+      { step: "03. Testing & Hardening", detail: "Validate edge cases using Postman, test performance, and ensure mobile responsiveness." },
+      { step: "04. Deployment & Handover", detail: "Deploy to cloud infrastructure, set up automated CI/CD pipelines, and provide complete documentation." }
+    ],
+    deliverables: ["Full source code repository", "Dockerized deployment setup", "Postman API collection", "Documentation & setup guide"],
+    typicalTimeline: "2 – 5 weeks"
+  },
+  {
+    id: "ai-systems",
+    title: "Agentic AI & LLM Systems",
+    category: "Artificial Intelligence",
+    tagline: "Turn complex workflows into automated, multi-agent AI pipelines with prompt engineering and guardrails",
+    problem: "Generic AI chatbots hallucinate, produce inconsistent outputs, and lack deterministic validation required for real enterprise workflows.",
+    whatIBuild: [
+      "Multi-agent task decomposition pipelines using LLMs (OpenAI, Gemini, Llama)",
+      "Automated diagram and document generation from natural language prompts",
+      "Prompt engineering and structured JSON output validation",
+      "Spring Boot REST API mediation layers connecting frontend UIs to AI services"
+    ],
+    tech: ["React.js", "Spring Boot", "LLMs", "Prompt Engineering", "AWS", "REST APIs"],
+    workflow: [
+      { step: "01. Prompt & Task Decomposition", detail: "Deconstruct the manual task into verifiable sub-goals and prompt chains." },
+      { step: "02. Agent Orchestration", detail: "Build multi-step agent pipelines with fallback strategies and deterministic output validators." },
+      { step: "03. Backend & UI Integration", detail: "Connect AI endpoints to Spring Boot REST APIs and interactive React interfaces." },
+      { step: "04. Verification & Testing", detail: "Test against edge cases to eliminate hallucinations and ensure consistent performance." }
+    ],
+    deliverables: ["Tested AI pipeline codebase", "Spring Boot API integration", "Validation rules & prompt templates", "Operational documentation"],
+    typicalTimeline: "2 – 4 weeks"
+  },
+  {
+    id: "data-bi",
+    title: "Data Analysis & Power BI Dashboards",
+    category: "Data & BI",
+    tagline: "Transform multi-source transactional data into interactive, executive decision-support dashboards",
+    problem: "Siloed data in conflicting formats makes it impossible for business leaders to track KPIs, identify profit trends, or make confident decisions.",
+    whatIBuild: [
+      "Advanced SQL data transformation pipelines (joins, CTEs, window functions)",
+      "Interactive Power BI executive dashboards with dynamic filtering and slicers",
+      "Star schema data modeling and automated ETL data cleaning",
+      "Revenue growth, profit margin, and customer segmentation KPI analytics"
+    ],
+    tech: ["SQL", "Power BI", "ETL Pipelines", "PostgreSQL", "MySQL", "Data Modeling"],
+    workflow: [
+      { step: "01. Data Audit & Extraction", detail: "Inspect raw data sources, identify data quality issues, and define key metrics." },
+      { step: "02. SQL ETL & Cleaning", detail: "Write robust SQL scripts with joins and CTEs to standardize types and clean anomalies." },
+      { step: "03. Star Schema Modeling", detail: "Design optimized dimension and fact tables for fast interactive aggregation." },
+      { step: "04. Dashboard Engineering", detail: "Build executive visual dashboards in Power BI with custom DAX calculations and slicers." }
+    ],
+    deliverables: ["Power BI report files (.pbix)", "Documented SQL ETL transformation scripts", "Data model documentation", "Executive KPI walkthrough"],
+    typicalTimeline: "1 – 3 weeks"
   }
 ];
 
 export const FAQS = [
   {
-    question: "Who is Deepak Kumar?",
-    answer: "Deepak Kumar is an IT professional and freelancer based in Bangalore (available for remote work globally). He focuses on full-stack web development, AI integrations (RAG, embeddings, guardrails), networking, systems infrastructure, and practical workflow automation.",
+    question: "Who is Deepak Kumar N?",
+    answer: "Deepak Kumar N is a Software Engineer specializing in Full Stack Development and AI Systems, currently completing his final year B.Tech in Information Technology at Sri Krishna College of Engineering and Technology, Coimbatore (CGPA: 7.50 / 10.0). He has completed a Full Stack Developer Internship at Altitudes and built production projects in Agentic AI, decentralized blockchain microgrids, and data analytics.",
     category: "General",
-    source: "profile.json"
+    source: "resume.pdf"
   },
   {
-    question: "What technologies does Deepak work with?",
-    answer: "Deepak specializes in TypeScript, React, Next.js, and Node.js on the application layer; Python, FastAPI, and pgvector for AI and RAG systems; PostgreSQL, SQLite, and Redis for data; and Linux, Docker, TCP/IP, and Prometheus for systems and networking.",
-    category: "Skills",
-    source: "skills.json"
+    question: "What did Deepak work on during his internship at Altitudes?",
+    answer: "At Altitudes (Jun 2025 – Jul 2025), Deepak designed and shipped a natural-language-to-cloud-architecture feature that allows users to describe infrastructure in plain English and receive generated AWS diagrams. He integrated Spring Boot REST APIs with an LLM backbone, built reusable frontend components, and utilized AI-assisted coding tools.",
+    category: "Experience",
+    source: "experience/altitudes.pdf"
   },
   {
-    question: "What is GridOps?",
-    answer: "GridOps is a support intelligence application built by Deepak. It combines a Next.js dark-mode dashboard with a Python FastAPI RAG pipeline backed by PostgreSQL pgvector, cutting initial ticket triage time by 42% while providing verifiable citations for every answer.",
+    question: "What is Deepak's Agentic AI Cloud Architecture project?",
+    answer: "Agentic AI for Cloud Architecture Generation is a multi-agent system built with React.js, Spring Boot, LLMs, and AWS. It decomposes natural language requirements into verifiable sub-goals, selects optimal AWS services, and renders interactive cloud diagrams in real time.",
     category: "Projects",
-    source: "projects/gridops.json"
+    source: "projects/agentic-ai.pdf"
   },
   {
-    question: "What demonstrates Deepak's networking knowledge?",
-    answer: "His NetMap project demonstrates practical networking: he implemented passive ARP inspection, sub-second async ICMP/DNS latency monitoring, and Prometheus/Grafana visualization with <0.2% network overhead. He also manages home lab subnets, WireGuard VPNs, and Linux server hosts.",
-    category: "Networking",
-    source: "projects/netmap.json"
+    question: "What is Decentralize Scalable Grid and is it live?",
+    answer: "Yes, Decentralize Scalable Grid is deployed live on the Internet Computer Protocol (ICP) blockchain at https://4nish-4aaaa-aaaag-ali2a-cai.icp0.io/. It is a decentralized solar microgrid management platform built with React.js and Spring Boot microservices, enabling peer-to-peer renewable energy distribution without a central authority.",
+    category: "Projects",
+    source: "projects/decentralized-grid.pdf"
   },
   {
-    question: "What is Deepak currently learning?",
-    answer: "Deepak is currently deepening his knowledge in autonomous AI agents and multi-agent orchestration frameworks (such as LangGraph), AWS cloud architecture (IAM, VPC, CloudWatch), and advanced distributed system design.",
-    category: "Learning",
-    source: "profile.json"
+    question: "What certifications does Deepak hold?",
+    answer: "Deepak holds 6 verified certifications: AWS Academy Cloud Foundations (AWS Academy), Generative AI Mastermind (Outskill), Java Training (IIT Bombay Spoken Tutorial), Java for Beginners (Infosys), SQL Standard (Skill Rack), and CCNA Training (Cisco).",
+    category: "Certifications",
+    source: "certifications.pdf"
   },
   {
-    question: "Can Deepak work on freelance projects?",
-    answer: "Yes, Deepak is actively taking on freelance projects in Web Application Development, AI & RAG Integration, Workflow Automation, Technical Support Dashboards, and MVP builds. You can reach out via the contact form or email hello@deepak.dev.",
-    category: "Freelance",
-    source: "services.json"
+    question: "How can I contact or hire Deepak Kumar?",
+    answer: "You can reach Deepak directly via email at deepak.nithyananthan@gmail.com, by phone at +91 9360675434, or connect on LinkedIn (https://www.linkedin.com/in/deep4kkumar/) and GitHub (https://github.com/Deepakdudez).",
+    category: "Contact",
+    source: "contact.json"
   }
 ];

@@ -16,25 +16,34 @@ async function runTests() {
   const jsMatch = html.match(/\/assets\/index-[^"]+\.js/);
   const cssMatch = html.match(/\/assets\/index-[^"]+\.css/);
 
-  if (jsMatch) {
-    const jsRes = await fetch('http://localhost:3001' + jsMatch[0]);
-    console.log('3. JS Bundle Status:', jsRes.status, 'Length:', (await jsRes.text()).length);
-  }
+  if (!jsMatch) throw new Error('JS bundle not found in index.html');
+  const jsRes = await fetch('http://localhost:3001' + jsMatch[0]);
+  console.log('3. JS Bundle Status:', jsRes.status, 'Length:', (await jsRes.text()).length);
+
   if (cssMatch) {
     const cssRes = await fetch('http://localhost:3001' + cssMatch[0]);
     console.log('4. CSS Bundle Status:', cssRes.status, 'Length:', (await cssRes.text()).length);
   }
 
-  // Test 5: Verify GitHub and LinkedIn presence in JS bundle
+  // Test 4: Verify Content in Bundle
   const jsBundleText = await (await fetch('http://localhost:3001' + jsMatch[0])).text();
-  const hasGithub = jsBundleText.includes('github.com/Deepakdudez') || jsBundleText.includes('Deepakdudez');
-  const hasLinkedin = jsBundleText.includes('linkedin.com/in/deep4kkumar') || jsBundleText.includes('deep4kkumar');
-  console.log('5. GitHub Deepakdudez verified in bundle:', hasGithub);
-  console.log('6. LinkedIn deep4kkumar verified in bundle:', hasLinkedin);
-  console.log('7. Holographic portrait integrated:', jsBundleText.includes('deepak-portrait.jpg'));
+  const hasGithub = jsBundleText.includes('Deepakdudez');
+  const hasLinkedin = jsBundleText.includes('deep4kkumar');
+  const hasAltitudes = jsBundleText.includes('Altitudes');
+  const hasSKCET = jsBundleText.includes('Sri Krishna College') || jsBundleText.includes('SKCET');
+  const hasAgenticAI = jsBundleText.includes('Agentic AI');
+  const hasDecentralizedGrid = jsBundleText.includes('Decentralize Scalable Grid');
+  const hasEmail = jsBundleText.includes('deepak.nithyananthan@gmail.com');
 
-  if (!hasGithub || !hasLinkedin) {
-    throw new Error('Social links missing from bundle');
+  console.log('5. GitHub Deepakdudez verified:', hasGithub);
+  console.log('6. LinkedIn deep4kkumar verified:', hasLinkedin);
+  console.log('7. Altitudes 2025 Internship verified:', hasAltitudes);
+  console.log('8. SKCET Education verified:', hasSKCET);
+  console.log('9. Agentic AI & Decentralized Grid verified:', hasAgenticAI && hasDecentralizedGrid);
+  console.log('10. Email deepak.nithyananthan@gmail.com verified:', hasEmail);
+
+  if (!hasGithub || !hasLinkedin || !hasAltitudes || !hasSKCET || !hasAgenticAI || !hasDecentralizedGrid || !hasEmail) {
+    throw new Error('Key resume verification items missing from bundle');
   }
 
   console.log('--- ALL AUTOMATED VERIFICATION CHECKS PASSED SUCCESSFULLY ---');

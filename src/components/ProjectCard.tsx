@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Layers, Sparkles, Terminal, Activity, FileCode } from 'lucide-react';
+import { ArrowRight, Sparkles, Terminal, Activity, FileCode, Cpu, Layers, BarChart3, ShieldCheck, ExternalLink } from 'lucide-react';
 import { ProjectCaseStudy } from '../types';
 
 interface ProjectCardProps {
@@ -15,57 +15,63 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
   const numString = `0${index + 1}`;
 
-  // Visual header representation if external image is not loaded
+  // Custom visual header for each project
   const renderVisualHeader = () => {
-    if (project.id === 'gridops') {
+    if (project.id === 'agentic-ai-cloud') {
       return (
         <div className="w-full aspect-video bg-gradient-to-br from-surface via-card to-background relative overflow-hidden flex items-center justify-center p-6 border-b border-line group-hover:border-primary/50 transition-colors">
           <div className="absolute inset-0 bg-[radial-gradient(#D7FF3E_1px,transparent_1px)] [background-size:16px_16px] opacity-10" />
           <div className="w-full max-w-sm bg-surface/90 border border-line rounded-lg p-4 shadow-xl space-y-3 z-10 backdrop-blur">
             <div className="flex items-center justify-between border-b border-line pb-2">
-              <span className="text-[11px] font-mono text-primary flex items-center gap-1.5">
+              <span className="text-[11px] font-mono text-primary flex items-center gap-1.5 font-bold">
                 <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-                RAG TRIAGE ACTIVE
+                AGENTIC AI // AWS SYNTHESIZER
               </span>
-              <span className="text-[10px] font-mono text-muted-foreground">LATENCY: 182ms</span>
+              <span className="text-[10px] font-mono text-accent">SPRING BOOT API</span>
             </div>
-            <div className="space-y-1.5">
-              <div className="h-2 w-3/4 bg-line rounded" />
-              <div className="h-2 w-full bg-surface border border-line rounded" />
+            <div className="space-y-1.5 font-mono text-[10px]">
+              <div className="flex justify-between text-muted-foreground">
+                <span>Prompt Decomposition</span>
+                <span className="text-primary font-bold">4 Sub-Agents Chained</span>
+              </div>
+              <div className="flex justify-between text-muted-foreground">
+                <span>AWS Topology Mapping</span>
+                <span className="text-foreground">EC2 · S3 · Lambda · VPC</span>
+              </div>
             </div>
             <div className="flex items-center gap-2 pt-1">
-              <span className="text-[10px] font-mono bg-primary/20 text-primary px-2 py-0.5 rounded">pgvector: 98% MATCH</span>
-              <span className="text-[10px] font-mono bg-accent/20 text-accent px-2 py-0.5 rounded">GROUNDED</span>
+              <span className="text-[10px] font-mono bg-primary/20 text-primary px-2 py-0.5 rounded font-bold">LLM ORCHESTRATION</span>
+              <span className="text-[10px] font-mono bg-accent/20 text-accent px-2 py-0.5 rounded font-bold">AWS READY</span>
             </div>
           </div>
         </div>
       );
     }
 
-    if (project.id === 'netmap') {
+    if (project.id === 'decentralized-grid') {
       return (
-        <div className="w-full aspect-video bg-gradient-to-br from-surface via-card to-background relative overflow-hidden flex items-center justify-center p-6 border-b border-line group-hover:border-warm/50 transition-colors">
+        <div className="w-full aspect-video bg-gradient-to-br from-surface via-card to-background relative overflow-hidden flex items-center justify-center p-6 border-b border-line group-hover:border-accent/50 transition-colors">
           <div className="absolute inset-0 bg-[radial-gradient(#8AB4FF_1px,transparent_1px)] [background-size:16px_16px] opacity-10" />
           <div className="w-full max-w-sm bg-surface/90 border border-line rounded-lg p-4 shadow-xl space-y-3 z-10 backdrop-blur">
             <div className="flex items-center justify-between border-b border-line pb-2">
-              <span className="text-[11px] font-mono text-warm flex items-center gap-1.5">
-                <Activity className="w-3.5 h-3.5 text-warm" />
-                12 LAB NODES LIVE
+              <span className="text-[11px] font-mono text-accent flex items-center gap-1.5 font-bold">
+                <Activity className="w-3.5 h-3.5 text-accent animate-pulse" />
+                ICP BLOCKCHAIN CANISTER
               </span>
-              <span className="text-[10px] font-mono text-muted-foreground">LOSS: 0.0%</span>
+              <span className="text-[10px] font-mono text-primary font-bold">LIVE ON WEB3</span>
             </div>
-            <div className="flex items-center justify-between gap-2 pt-1 font-mono text-[10px]">
-              <div className="flex-1 bg-surface border border-line p-1.5 rounded text-center">
-                <span className="text-muted-foreground block">DNS</span>
-                <span className="text-foreground font-semibold">1.4ms</span>
+            <div className="grid grid-cols-3 gap-2 pt-1 font-mono text-[10px]">
+              <div className="bg-surface border border-line p-1.5 rounded text-center">
+                <span className="text-muted-foreground block text-[9px]">SOLAR</span>
+                <span className="text-primary font-bold">14.2 kWh</span>
               </div>
-              <div className="flex-1 bg-surface border border-line p-1.5 rounded text-center">
-                <span className="text-muted-foreground block">GW PING</span>
-                <span className="text-primary font-semibold">0.8ms</span>
+              <div className="bg-surface border border-line p-1.5 rounded text-center">
+                <span className="text-muted-foreground block text-[9px]">STORAGE</span>
+                <span className="text-accent font-bold">92% BATT</span>
               </div>
-              <div className="flex-1 bg-surface border border-line p-1.5 rounded text-center">
-                <span className="text-muted-foreground block">OVERHEAD</span>
-                <span className="text-warm font-semibold">&lt;0.2%</span>
+              <div className="bg-surface border border-line p-1.5 rounded text-center">
+                <span className="text-muted-foreground block text-[9px]">P2P PEERS</span>
+                <span className="text-foreground font-bold">8 NODES</span>
               </div>
             </div>
           </div>
@@ -73,26 +79,57 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
       );
     }
 
-    // Flowdesk
+    if (project.id === 'sales-bi-analytics') {
+      return (
+        <div className="w-full aspect-video bg-gradient-to-br from-surface via-card to-background relative overflow-hidden flex items-center justify-center p-6 border-b border-line group-hover:border-warm/50 transition-colors">
+          <div className="absolute inset-0 bg-[radial-gradient(#FFC46B_1px,transparent_1px)] [background-size:16px_16px] opacity-10" />
+          <div className="w-full max-w-sm bg-surface/90 border border-line rounded-lg p-4 shadow-xl space-y-3 z-10 backdrop-blur">
+            <div className="flex items-center justify-between border-b border-line pb-2">
+              <span className="text-[11px] font-mono text-warm flex items-center gap-1.5 font-bold">
+                <BarChart3 className="w-3.5 h-3.5 text-warm" />
+                POWER BI // SQL PIPELINE
+              </span>
+              <span className="text-[10px] font-mono text-foreground">STAR SCHEMA</span>
+            </div>
+            <div className="space-y-1.5 font-mono text-[10px]">
+              <div className="flex justify-between text-muted-foreground">
+                <span>SQL Transformations</span>
+                <span className="text-warm font-semibold">CTEs &amp; Window Functions</span>
+              </div>
+              <div className="flex justify-between text-muted-foreground">
+                <span>Executive Metric</span>
+                <span className="text-primary font-semibold">YoY Profit Margins</span>
+              </div>
+            </div>
+            <div className="flex items-center gap-2 pt-1">
+              <span className="text-[10px] font-mono bg-warm/20 text-warm px-2 py-0.5 rounded font-bold">ETL VERIFIED</span>
+              <span className="text-[10px] font-mono bg-surface border border-line text-foreground px-2 py-0.5 rounded">DAX MEASURES</span>
+            </div>
+          </div>
+        </div>
+      );
+    }
+
+    // Windows SysAdmin Lab
     return (
-      <div className="w-full aspect-video bg-gradient-to-br from-surface via-card to-background relative overflow-hidden flex items-center justify-center p-6 border-b border-line group-hover:border-accent/50 transition-colors">
+      <div className="w-full aspect-video bg-gradient-to-br from-surface via-card to-background relative overflow-hidden flex items-center justify-center p-6 border-b border-line group-hover:border-primary/50 transition-colors">
         <div className="absolute inset-0 bg-[radial-gradient(#F2F1EA_1px,transparent_1px)] [background-size:16px_16px] opacity-5" />
         <div className="w-full max-w-sm bg-surface/90 border border-line rounded-lg p-4 shadow-xl space-y-3 z-10 backdrop-blur">
           <div className="flex items-center justify-between border-b border-line pb-2">
-            <span className="text-[11px] font-mono text-accent flex items-center gap-1.5">
-              <FileCode className="w-3.5 h-3.5 text-accent" />
-              INVOICE #2026-081
+            <span className="text-[11px] font-mono text-primary flex items-center gap-1.5 font-bold">
+              <Terminal className="w-3.5 h-3.5 text-primary" />
+              VMWARE IT LAB // SYSADMIN
             </span>
-            <span className="text-[10px] font-mono text-primary font-bold">PAID ($2,400)</span>
+            <span className="text-[10px] font-mono text-muted-foreground">TCP/IP &amp; DNS</span>
           </div>
-          <div className="space-y-1.5 font-mono text-[11px]">
+          <div className="space-y-1.5 font-mono text-[10px]">
             <div className="flex justify-between text-muted-foreground">
-              <span>Milestone 02 Delivery</span>
-              <span className="text-foreground">Approved ✓</span>
+              <span>Incident Triage</span>
+              <span className="text-primary font-bold">&lt;15 min Resolution</span>
             </div>
             <div className="flex justify-between text-muted-foreground">
-              <span>Stripe Payout</span>
-              <span className="text-primary">Instant</span>
+              <span>DHCP &amp; Active Directory</span>
+              <span className="text-foreground">Zero Permission Drift</span>
             </div>
           </div>
         </div>
@@ -101,68 +138,81 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   };
 
   return (
-    <div className="bg-card border border-line rounded-lg overflow-hidden flex flex-col hover:border-primary/80 transition-all duration-300 hover:translate-y-[-2px] hover:shadow-glow group">
-      {/* Visual Header */}
-      {renderVisualHeader()}
+    <div
+      onClick={() => onOpenCaseStudy(project)}
+      className="bg-card border border-line rounded-xl overflow-hidden flex flex-col justify-between hover:border-primary/80 transition-all duration-300 group cursor-pointer shadow-lg hover:shadow-2xl hover:translate-y-[-2px]"
+    >
+      <div>
+        {/* Dynamic Visual Banner */}
+        {renderVisualHeader()}
 
-      {/* Card Content matching Banani */}
-      <div className="p-7 flex flex-col gap-4 flex-1">
-        {/* Top meta row */}
-        <div className="flex items-center justify-between">
-          <span className="font-mono text-xs font-bold text-primary tracking-widest">
-            {numString}
-          </span>
-          <span className="font-body text-xs text-muted-foreground border border-line rounded-md px-2.5 py-1">
-            {project.badge}
-          </span>
-        </div>
-
-        {/* Project Title */}
-        <h3 className="font-headings font-bold text-foreground text-2xl leading-tight group-hover:text-primary transition-colors">
-          {project.title}
-        </h3>
-
-        {/* Tech Tags in Accent Blue */}
-        <div className="font-mono text-xs text-accent font-medium">
-          {project.stack.join(' · ')}
-        </div>
-
-        {/* Side-by-side Problem vs Solution from Banani */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 my-1">
-          {/* Problem Box */}
-          <div className="bg-surface border border-line rounded-md p-4">
-            <div className="font-mono text-xs font-bold text-warm uppercase tracking-wider mb-1.5">
-              Problem
-            </div>
-            <div className="font-body text-xs text-foreground leading-relaxed line-clamp-3">
-              {project.summaryProblem}
-            </div>
+        {/* Content Area */}
+        <div className="p-6 space-y-4">
+          {/* Top metadata tags */}
+          <div className="flex items-center justify-between gap-2">
+            <span className="font-mono text-xs text-primary font-bold">
+              {numString} // {project.category.toUpperCase()}
+            </span>
+            <span className="font-mono text-[10px] text-muted-foreground border border-line bg-surface/80 rounded px-2 py-0.5">
+              {project.badge.split('—')[0]}
+            </span>
           </div>
 
-          {/* Solution Box */}
-          <div className="bg-surface border border-line rounded-md p-4">
-            <div className="font-mono text-xs font-bold text-primary uppercase tracking-wider mb-1.5">
-              Solution
+          {/* Project Title and Live Demo indicator */}
+          <div className="space-y-1.5">
+            <div className="flex items-center justify-between gap-2">
+              <h3 className="font-headings font-bold text-foreground text-xl leading-snug group-hover:text-primary transition-colors">
+                {project.title}
+              </h3>
+              {project.liveUrl && (
+                <a
+                  href={project.liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) => e.stopPropagation()}
+                  className="p-1 rounded bg-primary/20 text-primary hover:bg-primary hover:text-primary-foreground transition-all shrink-0"
+                  title="Open Live Deployment"
+                >
+                  <ExternalLink className="w-3.5 h-3.5" />
+                </a>
+              )}
             </div>
-            <div className="font-body text-xs text-foreground leading-relaxed line-clamp-3">
-              {project.summarySolution}
-            </div>
+            <p className="font-body text-xs text-muted-foreground leading-relaxed">
+              {project.tagline}
+            </p>
+          </div>
+
+          {/* Metrics Pills */}
+          <div className="flex flex-wrap gap-1.5 pt-1">
+            {project.metrics.map((metric) => (
+              <span
+                key={metric}
+                className="font-mono text-[10px] text-foreground bg-surface border border-line rounded px-2 py-1"
+              >
+                ✓ {metric}
+              </span>
+            ))}
+          </div>
+
+          {/* Tech Stack Pills */}
+          <div className="flex flex-wrap gap-1 pt-1">
+            {project.stack.map((tech) => (
+              <span
+                key={tech}
+                className="font-mono text-[10px] text-muted-foreground bg-surface/50 border border-line/60 rounded px-1.5 py-0.5"
+              >
+                {tech}
+              </span>
+            ))}
           </div>
         </div>
+      </div>
 
-        {/* Bottom CTA row */}
-        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between pt-3 border-t border-line mt-auto gap-2">
-          <button
-            onClick={() => onOpenCaseStudy(project)}
-            className="font-body text-sm font-semibold text-foreground hover:text-primary flex items-center gap-2 group-hover:underline transition-colors"
-          >
-            <span>Open case study</span>
-            <ArrowRight className="w-4 h-4 text-primary group-hover:translate-x-1 transition-transform" />
-          </button>
-          
-          <span className="font-mono text-[11px] text-muted-foreground">
-            Architecture · Decisions · Lessons →
-          </span>
+      {/* Card Footer Call to Action */}
+      <div className="p-6 pt-0">
+        <div className="border-t border-line/60 pt-4 flex items-center justify-between text-xs font-mono text-muted-foreground group-hover:text-primary transition-colors">
+          <span className="font-medium">View full case study</span>
+          <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
         </div>
       </div>
     </div>

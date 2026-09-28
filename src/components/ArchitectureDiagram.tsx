@@ -7,14 +7,14 @@ interface ArchitectureDiagramProps {
 }
 
 export const ArchitectureDiagram: React.FC<ArchitectureDiagramProps> = ({ flow }) => {
-  // Default flow matching Banani home screen
+  // Default flow matching Deepak's Agentic AI Cloud Architecture Pipeline
   const defaultNodes: ArchitectureNode[] = [
-    { id: '1', name: 'User', type: 'client', tech: 'Client Browser', description: 'End-user sends natural language inquiry', rationale: 'Immediate feedback without installing desktop clients' },
-    { id: '2', name: 'Frontend', type: 'client', tech: 'Next.js 14 / React', description: 'Renders response with verified source citations', rationale: 'Server Components reduce bundle payload by 40%' },
-    { id: '3', name: 'API', type: 'service', tech: 'FastAPI / Node Gateway', description: 'Sanitizes input & rate limits incoming requests', rationale: 'Enforces token bucket security boundary against abuse' },
-    { id: '4', name: 'RAG Retriever', type: 'ai', tech: 'Reciprocal Rank Fusion', description: 'Hybrid search: BM25 sparse + cosine dense vectors', rationale: 'Prevents missing exact acronyms like ERR_CONN_REFUSED' },
-    { id: '5', name: 'Vector DB', type: 'database', tech: 'PostgreSQL + pgvector', description: 'Self-hosted vector embeddings & document chunks', rationale: 'Data isolation on-prem with zero SaaS third-party leak' },
-    { id: '6', name: 'LLM', type: 'ai', tech: 'Grounded LLM Synthesizer', description: 'Generates answer strictly constrained to retrieved context', rationale: 'Output guardrails eliminate hallucinated claims' },
+    { id: '1', name: 'User Prompt', type: 'client', tech: 'Natural Language', description: 'Engineer describes cloud infrastructure goals in plain English', rationale: 'Simplifies complex AWS configuration into intuitive conversational prompts' },
+    { id: '2', name: 'React Canvas', type: 'client', tech: 'React.js + Tailwind', description: 'Interactive visual workspace rendering dynamic node connections', rationale: 'Enables real-time zoom, node inspection, and diagram export' },
+    { id: '3', name: 'Spring Boot API', type: 'service', tech: 'Java REST Gateway', description: 'Manages request validation, session orchestration, and agent mediation', rationale: 'Enterprise-grade type safety and reliable microservice communication' },
+    { id: '4', name: 'Agent Chainer', type: 'ai', tech: 'Multi-Step LLM Pipeline', description: 'Decomposes goals into Compute, Storage, Database, and Networking sub-agents', rationale: 'Prevents single-prompt omissions and enforces verifiable architectural sub-goals' },
+    { id: '5', name: 'AWS Validator', type: 'service', tech: 'Topology Graph Rules', description: 'Validates AWS Well-Architected rules, VPC subnets, and security groups', rationale: 'Guarantees generated cloud architectures are deployable without orphaned resources' },
+    { id: '6', name: 'Cloud Output', type: 'infra', tech: 'AWS Diagram & Config', description: 'Generates deployable architecture topology with S3 asset storage and Lambda inference', rationale: 'Accelerates cloud design turnaround by over 60%' },
   ];
 
   const nodes = flow?.nodes || defaultNodes;

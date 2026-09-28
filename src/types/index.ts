@@ -30,7 +30,7 @@ export interface ProjectCaseStudy {
   title: string;
   tagline: string;
   badge: string;
-  category: 'AI' | 'Networking' | 'Web Applications' | 'Automation';
+  category: 'AI' | 'Networking' | 'Web Applications' | 'Automation' | 'Blockchain' | 'Data & BI' | 'Systems';
   stack: string[];
   summaryProblem: string;
   summarySolution: string;

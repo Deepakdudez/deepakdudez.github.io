@@ -28,12 +28,16 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({
     { id: 'ask-ai', label: 'Ask Deepak’s AI Assistant', category: 'Intelligence', icon: Sparkles, action: () => { onClose(); onOpenAiAssistant(); } },
     { id: 'review-profile', label: 'Review My Profile by Role', category: 'Recruiting', icon: ShieldCheck, action: () => { onClose(); onOpenProfileReview(); } },
     { id: 'compare-job', label: 'Compare Job Description with Profile', category: 'Recruiting', icon: Search, action: () => { onClose(); onOpenJobAnalyzer(); } },
-    { id: 'proj-gridops', label: 'Case Study: GridOps — Support Intelligence', category: 'Projects', icon: Layers, action: () => { onClose(); onSelectProject('gridops'); } },
-    { id: 'proj-netmap', label: 'Case Study: NetMap — Home Lab Monitor', category: 'Projects', icon: Layers, action: () => { onClose(); onSelectProject('netmap'); } },
-    { id: 'proj-flowdesk', label: 'Case Study: Flowdesk — Freelance OS', category: 'Projects', icon: Layers, action: () => { onClose(); onSelectProject('flowdesk'); } },
+    { id: 'proj-agentic-ai', label: 'Case Study: Agentic AI for Cloud Architecture Generation', category: 'Projects', icon: Layers, action: () => { onClose(); onSelectProject('agentic-ai-cloud'); } },
+    { id: 'proj-decentralized-grid', label: 'Case Study: Decentralize Scalable Grid (ICP Blockchain)', category: 'Projects', icon: Layers, action: () => { onClose(); onSelectProject('decentralized-grid'); } },
+    { id: 'proj-sales-bi', label: 'Case Study: Sales Data Analysis & BI Dashboard', category: 'Projects', icon: Layers, action: () => { onClose(); onSelectProject('sales-bi-analytics'); } },
+    { id: 'proj-sysadmin-lab', label: 'Case Study: Windows System Administration & Troubleshooting Lab', category: 'Projects', icon: Layers, action: () => { onClose(); onSelectProject('windows-sysadmin-lab'); } },
+    { id: 'nav-overview', label: 'Go to Overview & 3D Core', category: 'Navigation', icon: ArrowRight, action: () => { onClose(); onNavigateSection('overview'); } },
+    { id: 'nav-projects', label: 'Go to Projects & Case Studies', category: 'Navigation', icon: Layers, action: () => { onClose(); onNavigateSection('projects'); } },
+    { id: 'nav-experience', label: 'Go to Experience & Altitudes Internship', category: 'Navigation', icon: ArrowRight, action: () => { onClose(); onNavigateSection('experience'); } },
+    { id: 'nav-skills', label: 'Go to Technical Skills & Certifications', category: 'Navigation', icon: ArrowRight, action: () => { onClose(); onNavigateSection('skills'); } },
     { id: 'nav-lab', label: 'Open Engineering Lab Experiments', category: 'Laboratory', icon: FlaskConical, action: () => { onClose(); onNavigateSection('lab'); } },
     { id: 'nav-resume', label: 'View Searchable Online Resume', category: 'Navigation', icon: FileText, action: () => { onClose(); onNavigateSection('resume'); } },
-    { id: 'nav-services', label: 'Freelance Services & Workflows', category: 'Navigation', icon: ArrowRight, action: () => { onClose(); onNavigateSection('services'); } },
     { id: 'nav-contact', label: 'Start a Project / Contact Deepak', category: 'Contact', icon: Send, action: () => { onClose(); onNavigateSection('contact'); } }
   ];
 
