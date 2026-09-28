@@ -645,12 +645,9 @@ export function App() {
                 <div className="font-headings font-bold text-primary-foreground text-2xl leading-tight">
                   I build. I learn. I explain. I improve.
                 </div>
-                <button
-                  onClick={() => setHiringModeRole('fullstack')}
-                  className="bg-primary-foreground text-foreground font-body text-sm font-semibold rounded-md px-5 py-3 w-fit hover:bg-black transition-colors cursor-pointer"
-                >
-                  See the evidence
-                </button>
+                <p className="font-body text-xs text-primary-foreground/80 leading-relaxed pt-1">
+                  Practical engineering, grounded in verified code, clear documentation, and measurable outcomes.
+                </p>
               </div>
             </div>
 
