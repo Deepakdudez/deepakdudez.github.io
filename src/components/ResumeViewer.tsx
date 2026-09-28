@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { Search, Sparkles, ExternalLink, Printer, Mail, Phone, MapPin } from 'lucide-react';
+import { Search, ExternalLink, Printer, Mail, Phone, MapPin } from 'lucide-react';
 import { GithubIcon, LinkedinIcon } from './BrandIcons';
 import { PROFILE, PROJECTS } from '../data/portfolioData';
 
 interface ResumeViewerProps {
-  onOpenAiAssistant: () => void;
+  onOpenAiAssistant?: () => void;
   onOpenCaseStudy: (projectId: string) => void;
 }
 
@@ -12,14 +12,9 @@ export const ResumeViewer: React.FC<ResumeViewerProps> = ({
   onOpenCaseStudy
 }) => {
   const [searchQuery, setSearchQuery] = useState('');
-  const [explainedSection, setExplainedSection] = useState<string | null>(null);
 
   const handlePrint = () => {
     window.print();
-  };
-
-  const handleExplain = (sectionTitle: string, contextText: string) => {
-    setExplainedSection(`AI Insight on "${sectionTitle}": ${contextText}`);
   };
 
   const filteredProjects = searchQuery
@@ -70,24 +65,6 @@ export const ResumeViewer: React.FC<ResumeViewerProps> = ({
         </div>
       </div>
 
-      {/* AI Explanation Banner if active */}
-      {explainedSection && (
-        <div className="p-4 bg-secondary border-b border-primary/40 flex items-start justify-between gap-4 text-xs font-body animate-in fade-in duration-200">
-          <div className="flex items-start gap-2">
-            <Sparkles className="w-4 h-4 text-primary shrink-0 mt-0.5" />
-            <div className="text-foreground leading-relaxed">
-              {explainedSection}
-            </div>
-          </div>
-          <button
-            onClick={() => setExplainedSection(null)}
-            className="text-muted-foreground hover:text-foreground font-mono text-xs cursor-pointer"
-          >
-            Dismiss
-          </button>
-        </div>
-      )}
-
       {/* Main Resume Sheet */}
       <div className="p-6 sm:p-12 space-y-8 font-body max-w-4xl mx-auto bg-surface/40 print:bg-white print:text-black">
         {/* Header Section */}
@@ -126,17 +103,10 @@ export const ResumeViewer: React.FC<ResumeViewerProps> = ({
 
         {/* Professional Summary */}
         <section className="space-y-2">
-          <div className="flex items-center justify-between border-b border-line pb-1.5">
+          <div className="border-b border-line pb-1.5">
             <h4 className="font-headings font-bold text-foreground text-xs uppercase tracking-widest text-primary">
               Professional Summary
             </h4>
-            <button
-              onClick={() => handleExplain('Summary', 'Final-year B.Tech IT student at SKCET (CGPA: 7.50) with proven experience building full-stack web and agentic AI systems using Java, Spring Boot, React.js, and AWS.')}
-              className="text-[11px] font-mono text-primary hover:underline flex items-center gap-1 cursor-pointer print:hidden"
-            >
-              <Sparkles className="w-3 h-3" />
-              <span>Explain with AI</span>
-            </button>
           </div>
           <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed print:text-black">
             Final-year B.Tech Information Technology student (CGPA: 7.50 / 10.0) with demonstrated experience in full-stack development and AI-driven systems. Proficient in Java, Spring Boot, React.js, and RESTful API design, with hands-on exposure to LLM-powered agentic applications and AWS cloud services. Built production-ready projects spanning decentralized energy grids on ICP blockchain, cloud architecture generation via LLMs, and business intelligence dashboards. Certified in AWS Cloud Foundations, Java (IIT Bombay &amp; Infosys), and SQL.
@@ -145,17 +115,10 @@ export const ResumeViewer: React.FC<ResumeViewerProps> = ({
 
         {/* Work Experience */}
         <section className="space-y-3">
-          <div className="flex items-center justify-between border-b border-line pb-1.5">
+          <div className="border-b border-line pb-1.5">
             <h4 className="font-headings font-bold text-foreground text-xs uppercase tracking-widest text-primary">
               Work Experience
             </h4>
-            <button
-              onClick={() => handleExplain('Altitudes Internship', 'At Altitudes (Jun 2025 - Jul 2025), Deepak shipped a natural-language-to-cloud-architecture feature that translates user requirements into complete AWS diagrams, connecting Spring Boot REST APIs with LLM inference.')}
-              className="text-[11px] font-mono text-primary hover:underline flex items-center gap-1 cursor-pointer print:hidden"
-            >
-              <Sparkles className="w-3 h-3" />
-              <span>Explain with AI</span>
-            </button>
           </div>
 
           <div className="bg-card/70 border border-line rounded-lg p-5 space-y-3 print:border-none print:p-0">
@@ -195,7 +158,7 @@ export const ResumeViewer: React.FC<ResumeViewerProps> = ({
 
         {/* Flagship Projects */}
         <section className="space-y-4">
-          <div className="flex items-center justify-between border-b border-line pb-1.5">
+          <div className="border-b border-line pb-1.5">
             <h4 className="font-headings font-bold text-foreground text-xs uppercase tracking-widest text-primary">
               Projects
             </h4>
@@ -229,7 +192,7 @@ export const ResumeViewer: React.FC<ResumeViewerProps> = ({
                     className="text-xs font-mono text-primary flex items-center gap-1 hover:underline cursor-pointer print:hidden"
                   >
                     <span>View Case Study</span>
-                    <ExternalLink className="w-3 h-3" />
+                    <ExternalLink className="w-3.5 h-3.5" />
                   </button>
                 </div>
 
@@ -255,7 +218,7 @@ export const ResumeViewer: React.FC<ResumeViewerProps> = ({
 
         {/* Technical Skills Table matching resume */}
         <section className="space-y-3">
-          <div className="flex items-center justify-between border-b border-line pb-1.5">
+          <div className="border-b border-line pb-1.5">
             <h4 className="font-headings font-bold text-foreground text-xs uppercase tracking-widest text-primary">
               Technical Skills
             </h4>
@@ -301,7 +264,7 @@ export const ResumeViewer: React.FC<ResumeViewerProps> = ({
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Education */}
           <section className="space-y-3">
-            <div className="flex items-center justify-between border-b border-line pb-1.5">
+            <div className="border-b border-line pb-1.5">
               <h4 className="font-headings font-bold text-foreground text-xs uppercase tracking-widest text-primary">
                 Education
               </h4>
@@ -338,7 +301,7 @@ export const ResumeViewer: React.FC<ResumeViewerProps> = ({
 
           {/* Certifications */}
           <section className="space-y-3">
-            <div className="flex items-center justify-between border-b border-line pb-1.5">
+            <div className="border-b border-line pb-1.5">
               <h4 className="font-headings font-bold text-foreground text-xs uppercase tracking-widest text-primary">
                 Certifications
               </h4>
