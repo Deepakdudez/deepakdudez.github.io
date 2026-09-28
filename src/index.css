@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-background: #060709;
+  --color-foreground: #F2F1EA;
+  --color-primary: #D7FF3E;
+  --color-primary-foreground: #0A0C0A;
+  --color-secondary: #1A1D24;
+  --color-secondary-foreground: #D7FF3E;
+  --color-surface: #0E1015;
+  --color-card: #111319;
+  --color-line: #262A34;
+  --color-input: #12141A;
+  --color-accent: #8AB4FF;
+  --color-warm: #FFC46B;
+  --color-muted: #9AA0AB;
+}
+
+body {
+  background-color: #060709;
+  color: #F2F1EA;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, .font-headings {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+code, pre, .font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #060709;
+}
+::-webkit-scrollbar-thumb {
+  background: #262A34;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D7FF3E;
+}
+
+/* Subtle glow helpers */
+.glow-primary {
+  box-shadow: 0 0 40px rgba(215, 255, 62, 0.12);
+}
+
+.glow-card {
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+/* Architecture flow animation */
+@keyframes flowLine {
+  0% {
+    stroke-dashoffset: 24;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.animate-flow {
+  stroke-dasharray: 6 6;
+  animation: flowLine 1.5s linear infinite;
+}
+
+/* Holographic scan beam animation */
+@keyframes scanBeam {
+  0% {
+    top: 0%;
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.85;
+  }
+  100% {
+    top: 98%;
+    opacity: 0.1;
+  }
+}
+
+.animate-scan-beam {
+  animation: scanBeam 3s ease-in-out infinite alternate;
+}
+
+/* Print styles for Clean ATS Resume PDF */
+@media print {
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+  header, footer, #lab, #assistant, #contact, .fixed, nav {
+    display: none !important;
+  }
+  #resume-container {
+    border: none !important;
+    box-shadow: none !important;
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+  #resume-container * {
+    color: #000000 !important;
+    background: transparent !important;
+    border-color: #e5e7eb !important;
+  }
+}
+
+/* Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
