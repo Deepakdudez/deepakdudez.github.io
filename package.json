@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "node scripts/build.cjs",
     "preview": "vite preview",
-    "predeploy": "npm run build",
+    "predeploy": "node scripts/build.cjs",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
