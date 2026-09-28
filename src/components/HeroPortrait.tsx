@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Sparkles, ExternalLink, ShieldCheck, Activity, Terminal, ArrowUpRight } from 'lucide-react';
 import { GithubIcon, LinkedinIcon } from './BrandIcons';
 import { PROFILE } from '../data/portfolioData';
+import portraitImg from '../assets/deepak-portrait.jpg';
 
 interface HeroPortraitProps {
   onOpenAiAssistant?: () => void;
@@ -72,7 +73,7 @@ export const HeroPortrait: React.FC<HeroPortraitProps> = ({
 
           {/* Deepak's Actual Photo */}
           <img
-            src="/deepak-portrait.jpg"
+            src={portraitImg}
             alt="Deepak Kumar — Systems & IT Professional"
             className="w-full h-full object-cover object-top filter brightness-[1.02] contrast-[1.08] transition-transform duration-700 ease-out group-hover:scale-105"
             style={{
